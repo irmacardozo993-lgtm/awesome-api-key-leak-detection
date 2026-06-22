@@ -59,11 +59,14 @@
 | [secretlint](https://github.com/secretlint/secretlint) | 1.4k | ✅ | — | 网+本地 | ✅ | TypeScript |
 | [kingfisher](https://github.com/mongodb/kingfisher) | 1.1k | ✅ | ✅ | — | ✅ | Rust |
 | [titus](https://github.com/praetorian-inc/titus) | 598 | ✅ | ✅ | — | ✅ | Go |
+| [noseyparker](https://github.com/praetorian-inc/noseyparker) | 2.3k | ✅ | — | 网+本地 | — | Rust |
+| [CredSweeper](https://github.com/Samsung/CredSweeper) | 209 | ✅ | — | 本地 | ✅ | Python |
 | [keyhacks](https://github.com/streaak/keyhacks) | 6.3k | ✅ | ✅ | — | — | — |
 | [keyscope](https://github.com/SpectralOps/keyscope) | 411 | ✅ | ✅ | — | — | Rust |
 | [driftwood](https://github.com/trufflesecurity/driftwood) | 435 | ✅ | ✅ | 网+本地 | — | Go |
 | [llm-api-key-checker](https://github.com/ssfun/llm-api-key-checker) | 147 | ✅ | ✅ | — | ✅ | JavaScript |
 | [keyprobe](https://github.com/datumbrain/keyprobe) | 2 | ✅ | ✅ | 本地 | ✅ | Go |
+| [keyhunter](https://github.com/fadidevv/keyhunter) | 36 | ✅ | ✅ | 网络 | ✅ | Rust |
 | [keyleak-detector](https://github.com/Amal-David/keyleak-detector) | 261 | ✅ | — | — | ✅ | Python |
 | [gitrob](https://github.com/michenriksen/gitrob) | 6.2k | ✅ | — | 网+本地 | — | Go |
 | [shhgit](https://github.com/eth0izzle/shhgit) | 4.0k | ✅ | — | 网+本地 | — | JavaScript |
@@ -105,11 +108,13 @@ Rust/Go 高性能引擎、研究型或创新检测思路的扫描器,常带来�
 
 | 工具 | ⭐ | 语言 | 说明 | 许可 |
 |------|----|----|------|------|
+| [noseyparker](https://github.com/praetorian-inc/noseyparker) 🔒归档 | 2.3k | Rust | CLI secret scanner using regex rules over files, Git history, and GitHub orgs with blob-level dedup at GB/s speed. | Apache-2.0 |
 | [betterleaks](https://github.com/betterleaks/betterleaks) · | 1.3k | Go | Gitleaks successor: configurable secrets scanner with CEL-based filtering/validation, BPE token-rarity FP suppression, and multi-source support (GitHub/GitLab/HF/S3). | MIT |
 | [kingfisher](https://github.com/mongodb/kingfisher) 🤖 | 1.1k | Rust | Rust secret scanner with 950+ rules, Hyperscan SIMD, live validation, direct revocation, blast-radius mapping, and broad platform integrations. | Apache-2.0 |
 | [titus](https://github.com/praetorian-inc/titus) 🤖 | 598 | Go | High-perf secrets scanner: 487 rules with SIMD regex, live API validation, blast-radius scoring; CLI + Go lib + Burp + Chrome extension. | Apache-2.0 |
 | [pillager](https://github.com/brittonhayes/pillager) | 310 | Go | Concurrent filesystem secret scanner wrapping Gitleaks rules with red-team exfil (S3/Sliver/webhook) and a bubbletea TUI. | MIT |
 | [wraith](https://github.com/N0MoreSecr3ts/wraith) | 211 | Go | Gitrob-derived Go secret scanner for GitHub/GitLab/local git repos with external YAML signature definitions and web UI | MIT |
+| [CredSweeper](https://github.com/Samsung/CredSweeper) 🤖 | 209 | Python | Samsung credential scanner combining 121 regex rules with ML-based false positive filtering across source, docs, archives, and git diffs. | MIT |
 | [deepsecrets](https://github.com/avito-tech/deepsecrets) | 192 | Python | Semantic secret scanner using lexer-based code understanding + regex + hashed-secret engine across 500+ languages, no LLM key rules. | MIT |
 | [trufflehog3](https://github.com/feeltheajf/trufflehog3) | 125 | Python | Enhanced Python fork of truffleHog v2: regex+entropy secret scanning across git history with HTML reports and incremental mode. | GPL-2.0 |
 | [detect-secrets-server](https://github.com/Yelp/detect-secrets-server) | 107 | Python | Server-side batch scanner wrapping detect-secrets: tracks multiple repos, scans new commits periodically via cron, alerts on findings. | Apache-2.0 |
@@ -121,6 +126,7 @@ Rust/Go 高性能引擎、研究型或创新检测思路的扫描器,常带来�
 | [PyRepScan](https://github.com/Intsights/PyRepScan) | 40 | Python | Python library backed by Rust (git2-rs + crossbeam + regex) for high-speed regex scanning of full git history across all branches. | MIT |
 | [KEYSENTINEL](https://github.com/XingTuLab/KEYSENTINEL) | 40 | Python | IEEE S&P 2025 research secret scanner: regex+entropy scan with per-language AST cross-validation, CNN password model, and multi-stage wordlist/pattern FP filters | GPL-2.0 |
 | [VaultHound](https://github.com/ExploitCraft/VaultHound) | 16 | Python | Pattern-based secret scanner for local dirs, git history, and live URLs with 43 regexes and entropy filtering. | MIT |
+| [Whisper](https://github.com/JamesTheGiblet/Whisper) 🤖 | 0 | Python | 本地 Ollama LLM 对 regex/熵检出的候选密钥做上下文分类,区分测试假数据与真实凭证,降低假阳性。 | MIT |
 
 ---
 
@@ -137,14 +143,17 @@ Rust/Go 高性能引擎、研究型或创新检测思路的扫描器,常带来�
 | [gitleaks-action](https://github.com/gitleaks/gitleaks-action) | 602 | JavaScript | GitHub Action that runs gitleaks SAST on push/PR/schedule, posts PR comments, and uploads SARIF artifacts for code scanning alerts. | — |
 | [secret-magpie](https://github.com/punk-security/secret-magpie) | 243 | HTML | Orchestrator that enumerates repos from multiple Git providers and runs TruffleHog+Gitleaks on all branches, deduplicating results. | GPL-3.0 |
 | [git-alerts](https://github.com/boringtools/git-alerts) | 232 | Go | 监控 GitHub 组织成员个人账号下的公开仓库,通过 TruffleHog/Gitleaks 检测泄露的密钥和敏感文件。 | Apache-2.0 |
+| [gitdorks_go](https://github.com/damit5/gitdorks_go) | 229 | Go | GitHub code-search API wrapper that runs dork keyword lists against a target org to find potentially sensitive code snippets. | — |
 | [repository-scanner](https://github.com/abnamro/repository-scanner) | 166 | Python | Kubernetes-deployed Gitleaks wrapper that auto-scrapes repos from GitHub/Bitbucket/Azure DevOps and presents findings in a Vue3 dashboard. | MIT |
 | [GitLeak](https://github.com/5alt/GitLeak) | 128 | JavaScript | Keyword-driven GitHub code search for passwords in sensitive files (.env etc), using filename+content combo queries. | MIT |
+| [LeakIXClient](https://github.com/LeakIX/LeakIXClient) | 104 | Go | Go CLI & library for querying LeakIX's internet-leak index (exposed git configs, open DBs); not a scanner itself. | BSD-3-Clause |
 | [git-secret-scanner](https://github.com/padok-team/git-secret-scanner) | 68 | Go | Wraps TruffleHog+Gitleaks to scan all repos in a GitHub org or GitLab group, merging results by fingerprint with dedup and baseline diff. | Apache-2.0 |
 | [xGitGuard](https://github.com/Comcast/xGitGuard) | 64 | Python | Comcast 出品,基于 GitHub Code Search API 的关键词+扩展名组合扫描器,带可训练 ML 假阳性过滤器,面向企业/公开 GitHub 仓库 | Apache-2.0 |
 | [keyscan](https://github.com/aerovato/keyscan) 🤖 | 58 | Python | Scans GitHub Gists for exposed API keys using a local LLM (qwen3:1.7b) to classify candidates, then verifies against provider endpoints. | GPL-3.0 |
 | [claudleak](https://github.com/hazcod/claudleak) 🤖 | 57 | Go | Scans public GitHub repos for leaked secrets specifically in AI coding tool config files (.claude/, .cursor/, .codex/, etc.) via TruffleHog. | — |
 | [secret-scanner](https://github.com/grab/secret-scanner) | 55 | Go | 基于 Gitrob 的 Go CLI 工具,签名匹配扫描 GitHub/GitLab/Bitbucket 仓库中的私钥、API secret 和 token | MIT |
 | [GSSAR](https://github.com/advanced-security/GSSAR) · | 51 | TypeScript | Auto-revokes secrets found by GitHub Secret Scanning via webhook-triggered Lambda remediators (AWS Step Functions); detection-free remediation layer. | MIT |
+| [KeySentry](https://github.com/AdityaBhatt3010/KeySentry) | 41 | TypeScript | Simple regex-based CLI + web scanner for ~25 API key patterns and sensitive filenames in GitHub repos/local dirs. | MIT |
 | [ghmon](https://github.com/sl4x0/ghmon) | 31 | Python | Python wrapper that orchestrates TruffleHog scans across GitHub/GitLab orgs with Discord/Telegram alerting and persistent state. | — |
 
 ---
@@ -157,6 +166,7 @@ Rust/Go 高性能引擎、研究型或创新检测思路的扫描器,常带来�
 | 工具 | ⭐ | 语言 | 说明 | 许可 |
 |------|----|----|------|------|
 | [llm-api-key-checker](https://github.com/ssfun/llm-api-key-checker) 🤖 | 147 | JavaScript | Batch LLM API key validator: paste keys, check liveness/balance across 9 providers via CF Workers+WebSocket. | MIT |
+| [keyhunter](https://github.com/fadidevv/keyhunter) 🤖 | 36 | Rust | Fast Rust scanner that searches GitHub for leaked API keys (OpenAI/Anthropic/Claude/GPT/HF + 45 providers) and verifies which are still active. | — |
 | [promptshield](https://github.com/promptshieldhq/promptshield) 🤖 | 19 | TypeScript | LLM gateway proxy that scans prompt/response traffic for secrets (Gitleaks) and PII (Presidio), enforces YAML block/mask policies, and routes multi-provider. | MIT |
 | [Ultimate-openai-gemini-claude-api-key-scraper](https://github.com/shjee-afridi/Ultimate-openai-gemini-claude-api-key-scraper) · | 12 | Python | Async wrapper around GitHub/GitLab code search APIs that regex-matches OpenAI/Claude/Gemini keys; mostly a portfolio project | — |
 | [api-key-leak-checker-leop](https://github.com/leo-cheung-itlger/api-key-leak-checker-leop) · | 3 | PowerShell | PowerShell pre-publish gate that scans files for common API key patterns via basic regex + optional gitleaks/trufflehog delegation. | MIT |
@@ -226,6 +236,7 @@ Rust/Go 高性能引擎、研究型或创新检测思路的扫描器,常带来�
 | [js-snitch](https://github.com/vavkamil/js-snitch) | 145 | Python | Downloads all JS files from a target website, beautifies them, runs TruffleHog + Semgrep, and aggregates verified/unverified secret findings. | Unlicense |
 | [webtrufflehog](https://github.com/c3l3si4n/webtrufflehog) | 127 | Python | Chrome extension that intercepts live web traffic via webRequest API and pipes URLs to TruffleHog for real-time secret detection. | — |
 | [trufflehog-burp-suite-extension](https://github.com/trufflesecurity/trufflehog-burp-suite-extension) · | 99 | Python | Burp Suite extension that intercepts HTTP traffic and runs TruffleHog every 10s to detect 800+ secret types in live requests/responses. | — |
+| [keyhunter](https://github.com/DonIsaac/keyhunter) · | 40 | Rust | Rust CLI that crawls websites, parses their JS with oxc AST, and detects leaked API keys using gitleaks rules + entropy + variable-name heuristics. | GPL-3.0 |
 | [google-api-key-scanner](https://github.com/its-l0bo/google-api-key-scanner) · | 1 | JavaScript | Chrome extension that detects Google API keys (AIza...) in web pages and validates them against Gemini/Maps/YouTube endpoints for bug bounty recon. | MIT |
 | [api-key-exposure-auditor](https://github.com/hasif5/api-key-exposure-auditor) · | 1 | JavaScript | Chrome MV3 extension that passively finds API keys across 15+ web surfaces and live-validates them against 11 providers with risk scoring. | MIT |
 | [google-api-key-checker](https://github.com/kukuxumushi/google-api-key-checker) 🤖 | 1 | JavaScript | Chrome extension that passively scans visited web pages for Google API keys and checks them against Gemini API endpoints. | MIT |
@@ -323,6 +334,7 @@ key 校验方法学、泄露案例、payload 字典、现有 awesome list——�
 |------|----|----|------|------|
 | [SecLists](https://github.com/danielmiessler/SecLists) | 71.7k | PHP | Curated collection of wordlists, payloads, and patterns for penetration testing and security assessments. | MIT |
 | [nuclei](https://github.com/projectdiscovery/nuclei) | 29.3k | Go | General-purpose DAST vulnerability scanner using YAML templates; not a secret/key detection tool. | MIT |
+| [APISecurityBestPractices](https://github.com/GitGuardian/APISecurityBestPractices) | 2.0k | — | GitGuardian's reference documentation with leak remediation checklists and secret management best practices—not a scanning tool, pure markdown guidance from 2019. | — |
 | [changeme](https://github.com/ztgrace/changeme) | 1.5k | Python | Network default-credential scanner that probes live services (HTTP/SSH/DB) for known default passwords via YAML-defined fingerprint database. | GPL-3.0 |
 | [leaky-repo](https://github.com/Plazmaz/leaky-repo) | 247 | Python | Benchmark corpus of fake secrets (configs, keys, high-entropy) for evaluating scanner tools' recall and precision. | MIT |
 | [secret-scanning-custom-patterns](https://github.com/advanced-security/secret-scanning-custom-patterns) | 176 | HTML | Curated regex pattern library for GitHub Advanced Security's custom secret scanning, covering 80+ secret types across vendors, databases, PII, and generic credentials. | MIT |
@@ -368,6 +380,10 @@ key 校验方法学、泄露案例、payload 字典、现有 awesome list——�
 | **mask-result 原地脱敏输出** | secretlint | 直接在源码文件里把命中值脱敏(mask),配合 SARIF 上传 GitHub Code Scanning |
 | **组织级 fan-out + 文件名签名库** | michenriksen/gitrob | 枚举 org 全员后并行扫各自仓库;~90 条文件名/扩展名签名(.pem/.kdbx/.sqlite…)用于高价值文件定位 |
 | **深度抽取 (zip/office/sqlite/pyc)** | mongodb/kingfisher | 从压缩包、Office 文档、SQLite、Python .pyc 里抽取密钥——覆盖 GitHub API 直扫够不到的制品 |
+| **Git-blob SHA-1 去重** | praetorian-inc/noseyparker | 对相同内容做 blob 级 SHA-1 去重,把跨输入/跨仓库的相同密钥折叠成单条 finding(可压缩 10-1000x),大幅降低大规模 org 扫描的 triage 噪音 |
+| **本地 LLM 区分测试假 key vs 真凭据** | JamesTheGiblet/Whisper | 用本地 Ollama 对正则/熵检出的候选做上下文分类,识别测试占位 key 与真实凭据——离线、零额度、降误报 |
+| **JS AST 定位变量名→赋值** | DonIsaac/keyhunter | 用 oxc 把 JS 解析成 AST,按变量名(如 OPENAI_API_KEY)定位再取赋值,区分变量名上下文与裸值;附 CDN/库自动跳过——网页 JS 扫描降误报 |
+| **ML 后过滤 + 公开基准 (CredData)** | Samsung/CredSweeper | TF→ONNX 轻量分类器对正则命中做后过滤;配套 CredData 公开基准数据集可复现评估 recall/precision |
 
 ---
 

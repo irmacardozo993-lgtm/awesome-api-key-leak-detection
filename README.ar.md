@@ -1,56 +1,56 @@
 # 🔑 Awesome API Key Leak Detection
-**Languages:** **English** • [简体中文](README.zh-CN.md) • [繁體中文](README.zh-TW.md) • [Español](README.es.md) • [Français](README.fr.md) • [Deutsch](README.de.md) • [日本語](README.ja.md) • [한국어](README.ko.md) • [Português (BR)](README.pt-BR.md) • [Русский](README.ru.md) • [العربية](README.ar.md) • [Italiano](README.it.md)
+**اللغات:** [English](README.md) • [简体中文](README.zh-CN.md) • [繁體中文](README.zh-TW.md) • [Español](README.es.md) • [Français](README.fr.md) • [Deutsch](README.de.md) • [日本語](README.ja.md) • [한국어](README.ko.md) • [Português (BR)](README.pt-BR.md) • [Русский](README.ru.md) • **العربية** • [Italiano](README.it.md)
 
-> A curated list of **API key discovery / large language model (LLM) API key leak detection** tools and resources.
-> Built on top of the self-developed [Key Scanner](https://github.com/irmacardozo993-lgtm/key-scanner), it systematically catalogs all prior related projects — **standing on the shoulders of giants, avoiding reinventing the wheel.**
+> قائمة منتقاة لأدوات ومصادر **اكتشاف مفاتيح API / كشف تسرّب مفاتيح API للنماذج اللغوية الكبيرة (LLM)**.
+> مبنيٌّ فوق أداة [Key Scanner](https://github.com/irmacardozo993-lgtm/key-scanner) المطوَّرة ذاتيًّا، ويُفهرس منهجيًّا جميع المشاريع السابقة ذات الصلة — **واقفًا على أكتاف العمالقة، متجنّبًا إعادة اختراع العجلة.**
 >
-> Each tool is annotated with its unique techniques and "absorbable ideas," so you can judge which are worth borrowing into your own scanner.
+> كل أداة موسومة بتقنياتها الفريدة و"أفكارها القابلة للاستيعاب"، بحيث يمكنك الحكم على ما يستحق الاقتراض إلى ماسحك الخاص.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg) ![Tools](https://img.shields.io/badge/tools-130+-blue) ![Focus: LLM Keys](https://img.shields.io/badge/focus-LLM%20keys-purple) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ---
 
-## Table of Contents
+## جدول المحتويات
 
-- [1. 🏆 Giants: Industrial-Grade Secret Scanners](#giants)
-- [2. 🚀 High-Performance / Emerging Scanners](#hp-scanner)
-- [3. 🔎 GitHub Recon & Public Repo Hunting](#github-recon)
-- [4. 🤖 LLM / AI Key Specialists ⭐](#llm-key)
-- [5. ✅ Key Liveness / Validity Checking](#key-validator)
-- [6. 🧬 Regex / Rule Databases](#pattern-db)
-- [7. 🕸️ JS / Web / Browser Key Extraction](#js-web)
-- [8. 🐳 Container / Runtime / Memory / Gateway Redaction](#container-runtime)
-- [9. 🍯 Honeypot / Canary Tokens](#honeypot)
-- [10. 🪝 AI Agent Secret-Interception Hooks](#ai-agent-hook)
-- [11. 🏢 SaaS / Multi-Platform Monitoring](#saas)
-- [12. 📚 Reference Resources & Wordlists](#reference)
-- [13. 🧪 Experimental / Small Tools](#experimental)
-- [14. 🧩 Technical Borrowing Cheatsheet (Absorbable Ideas)](#absorb)
-- [🙋 Contributing](#contributing) · [📜 License](#license)
+- [1. 🏆 العمالقة: ماسحات الأسرار على مستوى المؤسسات](#giants)
+- [2. 🚀 الماسحات عالية الأداء / الناشئة](#hp-scanner)
+- [3. 🔎 استطلاع GitHub والبحث في المستودعات العامة](#github-recon)
+- [4. 🤖 مختصو مفاتيح LLM / الذكاء الاصطناعي ⭐](#llm-key)
+- [5. ✅ فحص حيوية المفاتيح / صحتها](#key-validator)
+- [6. 🧬 قواعد بيانات الـ regex / القواعد](#pattern-db)
+- [7. 🕸️ استخراج مفاتيح JS / الويب / المتصفح](#js-web)
+- [8. 🐳 الحاويات / وقت التشغيل / الذاكرة / التنقيح عند البوابة](#container-runtime)
+- [9. 🍯 الفخاخ / رموز الـ canary](#honeypot)
+- [10. 🪝 خطافات اعتراض الأسرار لوكلاء الذكاء الاصطناعي](#ai-agent-hook)
+- [11. 🏢 مراقبة SaaS / متعددة المنصات](#saas)
+- [12. 📚 مصادر مرجعية وقوائم كلمات](#reference)
+- [13. 🧪 أدوات تجريبية / صغيرة](#experimental)
+- [14. 🧩 ورقة غش الاقتراض التقني (أفكار قابلة للاستيعاب)](#absorb)
+- [🙋 المساهمة](#contributing) · [📜 الترخيص](#license)
 
 ---
 
-## Legend
+## وسيلة الإيضاح
 
-| Marker | Meaning |
+| العلامة | المعنى |
 |------|------|
-| ⭐ | GitHub star count (at time of research, approximate) |
-| `Language` | Primary language |
-| `License` | Open-source license |
-| 🤖 | Directly related to LLM/AI key leak detection (focus of this list) |
-| · | Partially related (covers multiple categories incl. AI keys) |
-| 🔒Archived | Repository is archived |
+| ⭐ | عدد نجوم GitHub (وقت البحث، تقريبي) |
+| `Language` | اللغة الأساسية |
+| `License` | ترخيص مفتوح المصدر |
+| 🤖 | مرتبط مباشرةً بكشف تسرّب مفاتيح LLM/الذكاء الاصطناعي (محور هذه القائمة) |
+| · | مرتبط جزئيًّا (يغطي عدة فئات بما فيها مفاتيح الذكاء الاصطناعي) |
+| 🔒Archived | المستودع مؤرشف |
 
-> Entries marked 🤖 belong to the "LLM API key leak detection" track — a blank area on GitHub that **no authoritative awesome list currently covers**.
+> المدخلات الموسومة بـ 🤖 تنتمي إلى مسار "كشف تسرّب مفاتيح LLM API" — منطقة فارغة على GitHub **لا يغطيها حاليًّا أي قائمة awesome موثوقة**.
 
 ---
 
 <a id="matrix"></a>
-## 🗺️ Overview: Core Tool Capability Matrix
+## 🗺️ نظرة عامة: مصفوفة قدرات الأدوات الأساسية
 
-> Compare core tools across capability dimensions to quickly locate "what's missing" / "what to borrow".
+> قارن الأدوات الأساسية عبر أبعاد القدرة لتحديد موضع "ما هو مفقود" / "ما الذي يمكن اقتراضه" بسرعة.
 
-| Tool | ⭐ | Detection | Liveness | Multi-source (web/local) | LLM-key | Language |
+| الأداة | ⭐ | الكشف | الحيوية | متعدد المصادر (ويب/محلي) | مفاتيح LLM | اللغة |
 |------|----|------|------|----------------|---------|------|
 | [gitleaks](https://github.com/gitleaks/gitleaks) | 27.8k | ✅ | — | web+local | — | Go |
 | [trufflehog](https://github.com/trufflesecurity/trufflehog) | 26.8k | ✅ | ✅ | local | ✅ | Go |
@@ -80,11 +80,11 @@
 ---
 
 <a id="giants"></a>
-## 🏆 Giants: Industrial-Grade Secret Scanners
+## 🏆 العمالقة: ماسحات الأسرار على مستوى المؤسسات
 
-The de facto standard for generic secret/credential scanning, with the most mature ecosystem and most complete rules. The first reference for any secret-scanning project.
+المعيار الفعلي لمسح الأسرار/بيانات الاعتماد العامة، بأكثر نظام بيئي نضجًّا وأكثر القواعد اكتمالًا. المرجع الأول لأي مشروع مسح أسرار.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [trivy](https://github.com/aquasecurity/trivy) | 36.5k | Go | Comprehensive security scanner (vulns/misconfig/secrets/SBOM) for containers, K8s, filesystems, and git repos. | Apache-2.0 |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | 27.8k | Go | Git/file/stdin secret scanner with 222 regex+entropy rules, git-history scanning, and CI/CD pre-commit integration; declared feature-complete. | MIT |
@@ -103,11 +103,11 @@ The de facto standard for generic secret/credential scanning, with the most matu
 ---
 
 <a id="hp-scanner"></a>
-## 🚀 High-Performance / Emerging Scanners
+## 🚀 الماسحات عالية الأداء / الناشئة
 
-Rust/Go high-performance engines, research-oriented or innovative-detection scanners — often bring borrowable engineering techniques.
+محرّكات Rust/Go عالية الأداء، ماسحات موجّهة للبحث أو ذات كشف مبتكر — غالبًا ما تأتي بتقنيات هندسية قابلة للاقتراض.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [noseyparker](https://github.com/praetorian-inc/noseyparker) 🔒Archived | 2.3k | Rust | CLI secret scanner using regex rules over files, Git history, and GitHub orgs with blob-level dedup at GB/s speed. | Apache-2.0 |
 | [betterleaks](https://github.com/betterleaks/betterleaks) · | 1.3k | Go | Gitleaks successor: configurable secrets scanner with CEL-based filtering/validation, BPE token-rarity FP suppression, and multi-source support (GitHub/GitLab/HF/S3). | MIT |
@@ -132,11 +132,11 @@ Rust/Go high-performance engines, research-oriented or innovative-detection scan
 ---
 
 <a id="github-recon"></a>
-## 🔎 GitHub Recon & Public Repo Hunting
+## 🔎 استطلاع GitHub والبحث في المستودعات العامة
 
-Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, and code search. Corresponds to Key Scanner's `recent-public` / `github-events` modes.
+اصطياد جماعي للمفاتيح المتسرّبة من مستودعات GitHub/Gitee/Bitbucket العامة، وتدفقات الأحداث، وبحث الأكواد. يقابل وضعي `recent-public` / `github-events` في Key Scanner.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [gitrob](https://github.com/michenriksen/gitrob) 🔒Archived | 6.2k | Go | Clone org repos and walk git history, flagging sensitive files by filename/extension/path patterns only — no content scanning. | MIT |
 | [shhgit](https://github.com/eth0izzle/shhgit) | 4.0k | JavaScript | Scans GitHub/GitLab/BitBucket repos for 150+ secret signatures with entropy fallback (abandoned) | MIT |
@@ -160,11 +160,11 @@ Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, a
 ---
 
 <a id="llm-key"></a>
-## 🤖 LLM / AI Key Specialists ⭐
+## 🤖 مختصو مفاتيح LLM / الذكاء الاصطناعي ⭐
 
-**The core track of this list**: discovery and leak detection specifically targeting AI provider keys — OpenAI / Anthropic / Gemini / Groq / DeepSeek / domestic OpenAI-compatible relays, etc. This is a blank area on GitHub that **no authoritative awesome list covers**, and Key Scanner's main battleground.
+**المسار المحوري لهذه القائمة**: الاكتشاف وكشف التسرّب المستهدف تحديدًا لمفاتيح مزودي الذكاء الاصطناعي — OpenAI / Anthropic / Gemini / Groq / DeepSeek / المُرحِّلات المحلية المتوافقة مع OpenAI، إلخ. هذه منطقة فارغة على GitHub **لا يغطيها أي قائمة awesome موثوقة**، وهي ساحة المعركة الرئيسية لـ Key Scanner.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [llm-api-key-checker](https://github.com/ssfun/llm-api-key-checker) 🤖 | 147 | JavaScript | Batch LLM API key validator: paste keys, check liveness/balance across 9 providers via CF Workers+WebSocket. | MIT |
 | [keyhunter](https://github.com/fadidevv/keyhunter) 🤖 | 36 | Rust | Fast Rust scanner that searches GitHub for leaked API keys (OpenAI/Anthropic/Claude/GPT/HF + 45 providers) and verifies which are still active. | — |
@@ -180,11 +180,11 @@ Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, a
 ---
 
 <a id="key-validator"></a>
-## ✅ Key Liveness / Validity Checking
+## ✅ فحص حيوية المفاتيح / صحتها
 
-Determine whether a leaked key is still valid, and its quota/permissions — directly corresponds to Key Scanner's "liveness check" capability. Most worth borrowing.
+تحديد ما إذا كان مفتاح متسرّب لا يزال صالحًا، وما حصته/أذوناته — يقابل مباشرةً قدرة "فحص الحيوية" في Key Scanner. الأكثر استحقاقًا للاقتراض.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [keyhacks](https://github.com/streaak/keyhacks) | 6.3k | — | Curated cheatsheet of curl commands to validate whether leaked API keys from ~80 SaaS providers are still alive. | — |
 | [driftwood](https://github.com/trufflesecurity/driftwood) 🔒Archived | 435 | Go | Checks if a cryptographic private key (RSA/EC/DSA PEM) is actively used as a GitHub SSH key or TLS certificate. | Apache-2.0 |
@@ -211,11 +211,11 @@ Determine whether a leaked key is still valid, and its quota/permissions — dir
 ---
 
 <a id="pattern-db"></a>
-## 🧬 Regex / Rule Databases
+## 🧬 قواعد بيانات الـ regex / القواعد
 
-Regex patterns and rule databases absorbable into your own detectors.
+أنماط regex وقواعد بيانات قواعد قابلة للاستيعاب في كواشفك الخاصة.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [gf-secrets](https://github.com/dwisiswant0/gf-secrets) | 245 | Shell | Static collection of 23 grep regex JSON patterns (AWS/GCP/Slack/Stripe/etc.) for the gf CLI wrapper; no scanner engine, no verification, no LLM key coverage. | MIT |
 | [truffleHogRegexes](https://github.com/dxa4481/truffleHogRegexes) | 227 | Python | Flat JSON file of ~35 regex patterns for common service tokens (AWS, Slack, Stripe, Google); no scanner logic, no README, unmaintained since 2022. | GPL-3.0 |
@@ -224,11 +224,11 @@ Regex patterns and rule databases absorbable into your own detectors.
 ---
 
 <a id="js-web"></a>
-## 🕸️ JS / Web / Browser Key Extraction
+## 🕸️ استخراج مفاتيح JS / الويب / المتصفح
 
-Extract leaked keys/tokens from JavaScript bundles, web pages, HAR, and browser/Burp traffic.
+استخراج المفاتيح/الرموز المتسرّبة من حزم JavaScript وصفحات الويب وملفات HAR وحركة المتصفح/Burp.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [SecretFinder](https://github.com/m4ll0k/SecretFinder) | 2.5k | Python | Scans JavaScript files for hardcoded secrets (API keys, tokens, JWT) using regex patterns, supports URL/file/folder input. | GPL-3.0 |
 | [mantra](https://github.com/brosck/mantra) | 911 | Go | Go CLI that regex-scans JS files and HTML pages (fed via stdin URLs) for hardcoded API keys from 100+ third-party services. | GPL-3.0 |
@@ -246,11 +246,11 @@ Extract leaked keys/tokens from JavaScript bundles, web pages, HAR, and browser/
 ---
 
 <a id="container-runtime"></a>
-## 🐳 Container / Runtime / Memory / Gateway Redaction
+## 🐳 الحاويات / وقت التشغيل / الذاكرة / التنقيح عند البوابة
 
-Scan container images and process memory, or redact in real time at the gateway/log layer — the runtime-protection side.
+مسح صور الحاويات وذاكرة العمليات، أو التنقيح لحظيًّا عند طبقة البوابة/السجلات — جانب الحماية في وقت التشغيل.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [privacy-filter](https://github.com/packyme/privacy-filter) · | 251 | Go | Go library/HTTP/gRPC gateway that redacts PII and secrets from text before it reaches an LLM, using gitleaks rules + entropy + context heuristics. | MIT |
 | [pii-shield](https://github.com/pii-shield/pii-shield) | 146 | Go | K8s sidecar that sanitizes PII/secrets from application logs via entropy analysis + context keywords before logs leave the pod. | Apache-2.0 |
@@ -261,11 +261,11 @@ Scan container images and process memory, or redact in real time at the gateway/
 ---
 
 <a id="honeypot"></a>
-## 🍯 Honeypot / Canary Tokens
+## 🍯 الفخاخ / رموز الـ canary
 
-Deploy fake keys/decoys and track leakage and exploitation trails (defensive side, complementary to detection). Includes AI/LLM honeypots.
+نشر مفاتيح/طُعم زائفة وتتبع آثار التسرّب والاستغلال (الجانب الدفاعي، مكمّل للكشف). يشمل فخاخ الذكاء الاصطناعي/LLM.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [canarytokens](https://github.com/thinkst/canarytokens) | 2.1k | Python | Honeypot platform that generates decoy tokens (AWS keys, kubeconfigs, docs, URLs) and alerts when they are accessed or used. | GPL-3.0 |
 | [canarytokens-docker](https://github.com/thinkst/canarytokens-docker) | 657 | Dockerfile | One-command Docker deployment of a Canarytokens honeypot server, deploying DNS/HTTP/PDF/AWS decoy tokens and capturing trigger alerts. | BSD-3-Clause |
@@ -289,11 +289,11 @@ Deploy fake keys/decoys and track leakage and exploitation trails (defensive sid
 ---
 
 <a id="ai-agent-hook"></a>
-## 🪝 AI Agent Secret-Interception Hooks
+## 🪝 خطافات اعتراض الأسرار لوكلاء الذكاء الاصطناعي
 
-Secret-scanning hooks, skills, and MCP tools added to AI coding agents like Claude Code / Cursor / Codex (an emerging trend).
+خطافات مسح الأسرار ومهارات وأدوات MCP مضافة إلى وكلاء البرمجة بالذكاء الاصطناعي مثل Claude Code / Cursor / Codex (اتجاه ناشئ).
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [ship-safe](https://github.com/asamassekou10/ship-safe) · | 733 | JavaScript | CLI with 23 parallel agents scanning for secrets, LLM/CI/CD/supply-chain vulns; includes auto-fix REPL and SARIF CI output. | MIT |
 | [Claudoscope](https://github.com/cordwainersmith/Claudoscope) · | 197 | Swift | macOS menu-bar dashboard for Claude Code sessions with built-in secret scanning of local JSONL session files and 1-click security hardening. | MIT |
@@ -313,11 +313,11 @@ Secret-scanning hooks, skills, and MCP tools added to AI coding agents like Clau
 ---
 
 <a id="saas"></a>
-## 🏢 SaaS / Multi-Platform Monitoring
+## 🏢 مراقبة SaaS / متعددة المنصات
 
-Monitor keys exposed across collaboration platforms like Slack / Jira / Confluence / Gitee.
+مراقبة المفاتيح المكشوفة عبر منصات التعاون مثل Slack / Jira / Confluence / Gitee.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [badsecrets](https://github.com/blacklanternsecurity/badsecrets) | 804 | Python | Detects known/default cryptographic keys in web framework artifacts (cookies, JWTs, viewstates) via offline verification and active probing. | AGPL-3.0 |
 | [slack-watchman](https://github.com/PaperMtn/slack-watchman) | 402 | Python | Scans Slack workspace messages/files via Slack API for leaked API keys, tokens, PII, and sensitive files using YAML signatures. | GPL-3.0 |
@@ -327,11 +327,11 @@ Monitor keys exposed across collaboration platforms like Slack / Jira / Confluen
 ---
 
 <a id="reference"></a>
-## 📚 Reference Resources & Wordlists
+## 📚 مصادر مرجعية وقوائم كلمات
 
-Key-validation methodology, leak cases, payload wordlists, and existing awesome lists — not tools but highly worth borrowing.
+منهجية التحقق من المفاتيح، وحالات التسرّب، وقوائم كلمات الحمولات، وقوائم awesome الموجودة — ليست أدوات ولكنها تستحق الاقتراض بشدّة.
 
-| Tool | ⭐ | Language | Description | License |
+| الأداة | ⭐ | اللغة | الوصف | الترخيص |
 |------|----|----|------|------|
 | [SecLists](https://github.com/danielmiessler/SecLists) | 71.7k | PHP | Curated collection of wordlists, payloads, and patterns for penetration testing and security assessments. | MIT |
 | [nuclei](https://github.com/projectdiscovery/nuclei) | 29.3k | Go | General-purpose DAST vulnerability scanner using YAML templates; not a secret/key detection tool. | MIT |
@@ -343,11 +343,11 @@ Key-validation methodology, leak cases, payload wordlists, and existing awesome 
 ---
 
 <a id="experimental"></a>
-## 🧪 Experimental / Small Tools
+## 🧪 أدوات تجريبية / صغيرة
 
-Low star count or experimental in nature, but represents a niche direction or contains borrowable small tricks.
+عدد نجوم منخفض أو تجريبية بطبيعتها، لكنها تمثل اتجاهًا متخصصًا أو تحتوي على حِيَل صغيرة قابلة للاقتراض.
 
-| Tool | ⭐ | Description |
+| الأداة | ⭐ | الوصف |
 |------|----|------|
 | [llm-wiki_obsidian_hermes_r0b0tlabbra1n](https://github.com/r0b0tlab/llm-wiki_obsidian_hermes_r0b0tlabbra1n) | 21 | Agent memory system (Obsidian vault + SQLite FTS5) with a basic regex secret scanner as write-guard, not a dedicated key finder. |
 | [ApiKeyValidator](https://github.com/Syed-Ali-Dev/ApiKeyValidator) | 0 | Web UI to paste OpenAI/Anthropic keys for liveness checking (billing/rate-limit/model list); a pure validation tool, no scanning or leak detection |
@@ -355,45 +355,45 @@ Low star count or experimental in nature, but represents a niche direction or co
 ---
 
 <a id="absorb"></a>
-## 🧩 Technical Borrowing Cheatsheet (Absorbable Ideas)
+## 🧩 ورقة غش الاقتراض التقني (أفكار قابلة للاستيعاب)
 
-> The **core value-add** of this list: aggregating each tool's unique techniques into an "absorbable ideas" table, directly mapped to Key Scanner's improvement directions. This is the hands-on checklist for "standing on the shoulders of giants".
+> **القيمة المضافة المحورية** لهذه القائمة: تجميع تقنيات كل أداة الفريدة في جدول "أفكار قابلة للاستيعاب"، مخطوطةً مباشرةً إلى اتجاهات تحسين Key Scanner. هذه قائمة التحقق العملية لـ "الوقوف على أكتاف العمالقة".
 
-| Technique | Representative tool | Idea absorbable into Key Scanner |
+| التقنية | الأداة الممثلة | الفكرة القابلة للاستيعاب في Key Scanner |
 |------|---------|--------------------------|
-| **Keyword pre-filter gate** | truffleHog / gitleaks / kingfisher | Each detector declares an anchor string (e.g., OpenAI's base64 `T3BlbkFJ`), runs an ultra-fast string match before regex, skipping irrelevant content — scanning throughput can rise several-fold. |
-| **Verify-then-analyze** | truffleHog | Liveness check returns more than valid/invalid: a YAML-defined per-provider permission model enumerates the key's exact scope/quota/visible resources. |
-| **Blast-radius mapping** | mongodb/kingfisher | Leaked key → cloud identity → actually exposed resources (43 providers), upgrading "there's a leak" to "what was leaked," directly driving remediation priority. |
-| **Checksum validation without API calls** | mongodb/kingfisher | For GitHub/Confluent etc. tokens, use a built-in checksum algorithm to judge validity with no network request (zero quota consumption, zero audit trail). |
-| **Baseline snapshot + incremental diff** | Yelp/detect-secrets | Snapshot existing secrets into a baseline JSON, then alert only on "new" ones in CI — historical false positives cleared in one pass. |
-| **ML gibberish classifier** | Yelp/detect-secrets | Use a trained classifier (rfc.model) to filter high-entropy-string false positives, more accurate than pure entropy thresholds. |
-| **Regex→LLM two-stage adjudication** | juanfont/atalaia | Detector preserves recall, then a single schema-constrained LLM call adjudicates precision; confirmed/known test keys short-circuit past the LLM to save tokens. |
-| **Dual-threshold entropy + context proximity gate** | packyme/privacy-filter | When context keywords like `password`/`api_key` are present, use a low entropy threshold (4.0), otherwise high (4.8) — a quantified context heuristic. |
-| **FP-rejection pipeline** | packyme/privacy-filter | Template variables / UUIDs / hex hashes / path-URL boundaries / placeholder words / JSON-comma noise — reject high-entropy false positives rule by rule. |
-| **6-state key status classification** | ssfun/llm-api-key-checker | Beyond valid/invalid: subdivide into low-balance / zero / quota-exhausted / rate-limited / normal — liveness results become more operable. |
-| **Per-key capability matrix** | datumbrain/keyprobe | Beyond liveness, report which models the key can use and whether it supports streaming/batch/files — directly maps to keyscanner's provider mapping. |
-| **BaaS exploitability active probing** | Amal-David/keyleak-detector | After detecting a Supabase/Firebase anon key, actively probe whether RLS is enforced, upgrading "found a key" into a "proven exploitable" attack chain. |
-| **AIza key classification (Maps vs Gemini)** | Amal-David/keyleak-detector | Same AIza prefix: distinguish the expected-exposed Maps key from the truly leaked Gemini key — reduces false positives. |
-| **AI coding-assistant hook protocol** | GitGuardian/ggshield / mintmcp/agent-security | Intercept stdin JSON events (pretooluse/userpromptsubmit), return block/allow; fail-open design: on crash/auth failure, allow + alert, never lock the user out. |
-| **Canary token as LLM key** | thinkst/canarytokens | Plant fake LLM API keys in test configs/repos as honey-tokens, alert on query — proactively detect the leak path. |
-| **Rotation-tutorial direct link** | trufflesecurity/how-to-rotate | Next to a scan finding, link directly to that provider's key-rotation steps, so the user can remediate upon receiving the finding. |
-| **Declared per-provider verification spec** | SpectralOps/keyscope | Declare each provider's verification method in YAML (incl. flip-mode: assert the key is already revoked, for rotation audits); adding a provider is config-only. |
-| **Mask-result in-place redaction output** | secretlint | Mask hit values in-place within source files, paired with SARIF upload to GitHub Code Scanning. |
-| **Org-level fan-out + filename signature DB** | michenriksen/gitrob | Enumerate all org members then scan each one's repos in parallel; ~90 filename/extension signatures (.pem/.kdbx/.sqlite…) for high-value file locating. |
-| **Deep extraction (zip/office/sqlite/pyc)** | mongodb/kingfisher | Extract keys from archives, Office docs, SQLite, Python .pyc — covers artifacts GitHub API scanning can't reach. |
-| **Git-blob SHA-1 dedup** | praetorian-inc/noseyparker | SHA-1 dedup at the blob level for identical content, folding identical keys across inputs/repos into a single finding (10-1000x compression), drastically reducing triage noise in large-scale org scans. |
-| **Local LLM distinguishing test fake keys vs real credentials** | JamesTheGiblet/Whisper | Use a local Ollama to contextually classify regex/entropy-detected candidates, distinguishing test placeholder keys from real credentials — offline, zero quota, fewer false positives. |
-| **JS AST locating variable-name → assignment** | DonIsaac/keyhunter | Parse JS into AST via oxc, locate by variable name (e.g., OPENAI_API_KEY) then take the assignment, distinguishing variable-name context from bare values; with CDN/library auto-skip — fewer false positives in web JS scanning. |
-| **ML post-filter + public benchmark (CredData)** | Samsung/CredSweeper | A TF→ONNX lightweight classifier post-filters regex hits; ships with the CredData public benchmark dataset for reproducible recall/precision evaluation. |
+| **بوابة الترشيح المسبق بالكلمات المفتاحية (Keyword pre-filter gate)** | truffleHog / gitleaks / kingfisher | يُعرِّف كل كاشف سلسلة ارتساء (مثل `T3BlbkFJ` بـ base64 الخاص بـ OpenAI)، ويُجري مطابقة سلاسل فائقة السرعة قبل الـ regex، متخطيًّا المحتوى غير ذي الصلة — يمكن أن ترتفع إنتاجية المسح عدة أضعاف. |
+| **تحقّق ثم حلّل (Verify-then-analyze)** | truffleHog | فحص الحيوية يُعيد أكثر من صالح/غير صالح: نموذج أذونات لكل مزود معرَّف بـ YAML يُعدِّد النطاق/الحصة/الموارد المرئية للمفتاح بدقة. |
+| **خرائط نطاق الانفجار (Blast-radius mapping)** | mongodb/kingfisher | مفتاح متسرّب ← هوية سحابية ← موارد مكشوفة فعليًّا (43 مزودًا)، ترقيةً من "هناك تسرّب" إلى "ما الذي تسرّب"، مدفوعةً مباشرةً بأولوية المعالجة. |
+| **التحقق عبر الـ checksum دون استدعاءات API (Checksum validation without API calls)** | mongodb/kingfisher | لرموز GitHub/Confluent إلخ، استخدم خوارزمية checksum مدمجة للحكم على الصلاحية دون أي طلب شبكة (استهلاك حصة صفري، أثر تدقيق صفري). |
+| **لقطة أساسية + فرق تزايدي (Baseline snapshot + incremental diff)** | Yelp/detect-secrets | التقاط الأسرار الموجودة في JSON أساسي، ثم التنبيه فقط على "الجديدة" منها في CI — تُمسح الإيجابيات الكاذبة التاريخية في جولة واحدة. |
+| **مُصنِّف الهراء بالتعلّم الآلي (ML gibberish classifier)** | Yelp/detect-secrets | استخدام مُصنِّف مدرّب (rfc.model) لترشيح إيجابيات السلاسل عالية الإنتروبيا الكاذبة، أدق من عتبات الإنتروبيا الصرفة. |
+| **تحكيم على مرحلتين regex←LLM (Regex→LLM two-stage adjudication)** | juanfont/atalaia | يحافظ الكاشف على الاستدعاء، ثم استدعاء LLM واحد مقيّد بمخطط يحكّم في الدقة؛ المفاتيح الاختبارية المؤكَّدة/المعروفة تتجاوز LLM عبر اختصار لتوفير الرموز. |
+| **إنتروبيا بعتبتين + بوابة التقارب السياقي (Dual-threshold entropy + context proximity gate)** | packyme/privacy-filter | عند حضور كلمات سياقية مثل `password`/`api_key` تُستخدم عتبة إنتروبيا منخفضة (4.0)، وإلا فمرتفعة (4.8) — استدلال سياقي مُكمَّم. |
+| **خط رفض الإيجابيات الكاذبة (FP-rejection pipeline)** | packyme/privacy-filter | متغيرات القوالب / UUIDs / تجزئات hex / حدود المسار-URL / كلمات placeholder / ضجيج فواصل JSON — رفض الإيجابيات الكاذبة عالية الإنتروبيا قاعدةً تلو الأخرى. |
+| **تصنيف حالة المفتاح إلى 6 حالات (6-state key status classification)** | ssfun/llm-api-key-checker | ما بعد صالح/غير صالح: تقسيم فرعي إلى رصيد-منخفض / صفري / حصة-مستنزفة / محدود-المعدل / طبيعي — تصبح نتائج الحيوية أكثر قابلية للتشغيل. |
+| **مصفوفة قدرات لكل مفتاح (Per-key capability matrix)** | datumbrain/keyprobe | ما بعد الحيوية، الإبلاغ عن النماذج التي يستطيع المفتاح استخدامها وما إذا كان يدعم البث/الدفعات/الملفات — يُخطَّط مباشرةً إلى مخطط المزودين في keyscanner. |
+| **الاستكشاف النشط لقابلية استغلال BaaS (BaaS exploitability active probing)** | Amal-David/keyleak-detector | بعد كشف مفتاح anon لـ Supabase/Firebase، الاستكشاف النشط لما إذا كان RLS مُطبَّقًا، ترقيةً من "وُجد مفتاح" إلى سلسلة هجوم "قابلة للاستغلال مثبتة". |
+| **تصنيف مفتاح AIza (Maps مقابل Gemini) (AIza key classification (Maps vs Gemini))** | Amal-David/keyleak-detector | نفس سابقة AIza: التمييز بين مفتاح Maps المتوقع تعرّضه ومفتاح Gemini المتسرّب فعلًا — يقلل الإيجابيات الكاذبة. |
+| **بروتوكول خطاف مساعد البرمجة بالذكاء الاصطناعي (AI coding-assistant hook protocol)** | GitGuardian/ggshield / mintmcp/agent-security | اعتراض أحداث JSON عبر stdin (pretooluse/userpromptsubmit)، وإعادة block/allow؛ تصميم fail-open: عند الانهيار/فشل المصادقة، اسمح + نبِّه، ولا تقفل المستخدم خارجًا أبدًا. |
+| **رمز canary كمفتاح LLM (Canary token as LLM key)** | thinkst/canarytokens | زرع مفاتيح LLM API زائفة في إعدادات/مستودعات الاختبار كرموز عسل، والتنبيه عند الاستعلام — كشف استباقي لمسار التسرّب. |
+| **رابط مباشر لدرس التدوير (Rotation-tutorial direct link)** | trufflesecurity/how-to-rotate | بجانب نتيجة مسح، ربط مباشر بخطوات تدوير مفتاح ذلك المزود، بحيث يستطيع المستخدم المعالجة فور استلام النتيجة. |
+| **مواصفات تحقق معلنة لكل مزود (Declared per-provider verification spec)** | SpectralOps/keyscope | الإعلان عن طريقة تحقق كل مزود في YAML (بما فيها flip-mode: التأكد من أن المفتاح مُبطَّل أصلًا، لتدقيق التدوير)؛ إضافة مزود هي إعداد فقط. |
+| **إخراج تنقيح في-الموضع بنتيحة مقنّعة (Mask-result in-place redaction output)** | secretlint | تقنيع القيم المُصابة في-الموضع داخل الملفات المصدرية، مقرونًا برفع SARIF إلى GitHub Code Scanning. |
+| **انتشار على مستوى المؤسسة + قاعدة بيانات تواقيع أسماء الملفات (Org-level fan-out + filename signature DB)** | michenriksen/gitrob | إحصاء جميع أعضاء المؤسسة ثم مسح مستودعات كل واحد منهم بالتوازي؛ ~90 توقيع اسم ملف/امتداد (.pem/.kdbx/.sqlite…) لتحديد موقع الملفات عالية القيمة. |
+| **الاستخراج العميق (zip/office/sqlite/pyc) (Deep extraction (zip/office/sqlite/pyc))** | mongodb/kingfisher | استخراج المفاتيح من الأرشيفات ومستندات Office وSQLite وPython .pyc — يغطي قطعًا لا يبلغها مسح GitHub API. |
+| **إزالة تكرار Git-blob عبر SHA-1 (Git-blob SHA-1 dedup)** | praetorian-inc/noseyparker | إزالة تكرار SHA-1 على مستوى الـ blob للمحتوى المتطابق، طيّ المفاتيح المتطابقة عبر المدخلات/المستودعات في نتيجة واحدة (ضغط 10-1000x)، خفضًا حادًّا لضجيج الفرز في مسح المؤسسات واسع النطاق. |
+| **تمييز LLM محلي بين المفاتيح الاختبارية الزائفة وبيانات الاعتماد الحقيقية (Local LLM distinguishing test fake keys vs real credentials)** | JamesTheGiblet/Whisper | استخدام Ollama محلي لتصنيف المرشحين المكتشفين بـ regex/إنتروبيا سياقيًّا، تمييزًا لمفاتيح placeholder الاختبارية عن بيانات الاعتماد الحقيقية — دون اتصال، حصة صفرية، إيجابيات كاذبة أقل. |
+| **تحديد موقع اسم-المتغير ← الإسناد عبر AST للـ JS (JS AST locating variable-name → assignment)** | DonIsaac/keyhunter | تحليل JS إلى AST عبر oxc، وتحديد الموقع باسم المتغير (مثل OPENAI_API_KEY) ثم أخذ الإسناد، تمييزًا لسياق اسم المتغير عن القيم المجردة؛ مع تخطٍّ تلقائي لـ CDN/المكتبات — إيجابيات كاذبة أقل في مسح JS للويب. |
+| **مرشّح لاحق بالتعلّم الآلي + معيار أداء عام (CredData) (ML post-filter + public benchmark (CredData))** | Samsung/CredSweeper | مُصنِّف خفيف TF→ONNX يُرشِّح لاحقًا نتائج regex؛ يأتي مع مجموعة بيانات معيار CredData العامة لتقييم استدعاء/دقة قابلين لإعادة الإنتاج. |
 
 ---
 
 <a id="contributing"></a>
-## 🙋 Contributing
+## 🙋 المساهمة
 
-Contributions welcome! When opening a PR, please provide: tool name (with jump link), star count, primary language, a one-sentence description, license, and note its relevance to "API key / LLM key leak detection." If it has a unique technique, add it to the [Technical Borrowing Cheatsheet](#absorb).
+المساهمات مرحَّب بها! عند فتح PR، يُرجى توفير: اسم الأداة (مع رابط قفزة)، عدد النجوم، اللغة الأساسية، وصف بجملة واحدة، الترخيص، والإشارة إلى صلته بـ "كشف تسرّب مفاتيح API / مفاتيح LLM". إذا كان لها تقنية فريدة، أضفها إلى [ورقة غش الاقتراض التقني](#absorb).
 
 <a id="license"></a>
-## 📜 License
+## 📜 الترخيص
 
-List content is dedicated to the public domain under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Each tool retains its own license.
+محتوى القائمة مُكرَّس للملكية العامة بموجب [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). تحتفظ كل أداة بترخيصها الخاص.

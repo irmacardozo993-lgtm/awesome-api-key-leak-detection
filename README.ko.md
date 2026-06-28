@@ -1,56 +1,56 @@
 # 🔑 Awesome API Key Leak Detection
-**Languages:** **English** • [简体中文](README.zh-CN.md) • [繁體中文](README.zh-TW.md) • [Español](README.es.md) • [Français](README.fr.md) • [Deutsch](README.de.md) • [日本語](README.ja.md) • [한국어](README.ko.md) • [Português (BR)](README.pt-BR.md) • [Русский](README.ru.md) • [العربية](README.ar.md) • [Italiano](README.it.md)
+**언어:** [English](README.md) • [简体中文](README.zh-CN.md) • [繁體中文](README.zh-TW.md) • [Español](README.es.md) • [Français](README.fr.md) • [Deutsch](README.de.md) • [日本語](README.ja.md) • **한국어** • [Português (BR)](README.pt-BR.md) • [Русский](README.ru.md) • [العربية](README.ar.md) • [Italiano](README.it.md)
 
-> A curated list of **API key discovery / large language model (LLM) API key leak detection** tools and resources.
-> Built on top of the self-developed [Key Scanner](https://github.com/irmacardozo993-lgtm/key-scanner), it systematically catalogs all prior related projects — **standing on the shoulders of giants, avoiding reinventing the wheel.**
+> **API 키 탐색 / 대형 언어 모델(LLM) API 키 노출 탐지** 도구와 자료를 엄선한 목록입니다.
+> 자체 개발한 [Key Scanner](https://github.com/irmacardozo993-lgtm/key-scanner)를 기반으로, 기존 관련 프로젝트 전체를 체계적으로 정리했습니다 — **거인의 어깨 위에 서서 바퀴를 재발명하지 않습니다.**
 >
-> Each tool is annotated with its unique techniques and "absorbable ideas," so you can judge which are worth borrowing into your own scanner.
+> 각 도구에는 그 도구만의 고유한 기법과 "흡수 가능한 아이디어"를 주석으로 달아, 자신의 스캐너에 무엇을 차용할 가치가 있는지 판단할 수 있게 했습니다.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg) ![Tools](https://img.shields.io/badge/tools-130+-blue) ![Focus: LLM Keys](https://img.shields.io/badge/focus-LLM%20keys-purple) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ---
 
-## Table of Contents
+## 목차
 
-- [1. 🏆 Giants: Industrial-Grade Secret Scanners](#giants)
-- [2. 🚀 High-Performance / Emerging Scanners](#hp-scanner)
-- [3. 🔎 GitHub Recon & Public Repo Hunting](#github-recon)
-- [4. 🤖 LLM / AI Key Specialists ⭐](#llm-key)
-- [5. ✅ Key Liveness / Validity Checking](#key-validator)
-- [6. 🧬 Regex / Rule Databases](#pattern-db)
-- [7. 🕸️ JS / Web / Browser Key Extraction](#js-web)
-- [8. 🐳 Container / Runtime / Memory / Gateway Redaction](#container-runtime)
-- [9. 🍯 Honeypot / Canary Tokens](#honeypot)
-- [10. 🪝 AI Agent Secret-Interception Hooks](#ai-agent-hook)
-- [11. 🏢 SaaS / Multi-Platform Monitoring](#saas)
-- [12. 📚 Reference Resources & Wordlists](#reference)
-- [13. 🧪 Experimental / Small Tools](#experimental)
-- [14. 🧩 Technical Borrowing Cheatsheet (Absorbable Ideas)](#absorb)
-- [🙋 Contributing](#contributing) · [📜 License](#license)
+- [1. 🏆 거인들: 산업급 시크릿 스캐너](#giants)
+- [2. 🚀 고성능 / 신흥 스캐너](#hp-scanner)
+- [3. 🔎 GitHub 정찰 및 공개 저장소 사냥](#github-recon)
+- [4. 🤖 LLM / AI 키 전문 ⭐](#llm-key)
+- [5. ✅ 키 활성/유효성 검사](#key-validator)
+- [6. 🧬 정규식 / 규칙 데이터베이스](#pattern-db)
+- [7. 🕸️ JS / 웹 / 브라우저 키 추출](#js-web)
+- [8. 🐳 컨테이너 / 런타임 / 메모리 / 게이트웨이 마스킹](#container-runtime)
+- [9. 🍯 허니팟 / 카나리 토큰](#honeypot)
+- [10. 🪝 AI 에이전트 시크릿 가로채기 훅](#ai-agent-hook)
+- [11. 🏢 SaaS / 다중 플랫폼 모니터링](#saas)
+- [12. 📚 참고 자료 및 워드리스트](#reference)
+- [13. 🧪 실험적 / 소규모 도구](#experimental)
+- [14. 🧩 기술 차용 치트시트 (흡수 가능한 아이디어)](#absorb)
+- [🙋 기여하기](#contributing) · [📜 라이선스](#license)
 
 ---
 
-## Legend
+## 범례
 
-| Marker | Meaning |
+| 표시 | 의미 |
 |------|------|
-| ⭐ | GitHub star count (at time of research, approximate) |
-| `Language` | Primary language |
-| `License` | Open-source license |
-| 🤖 | Directly related to LLM/AI key leak detection (focus of this list) |
-| · | Partially related (covers multiple categories incl. AI keys) |
-| 🔒Archived | Repository is archived |
+| ⭐ | GitHub 스타 수 (조사 시점 기준, 대략적) |
+| `Language` | 주 언어 |
+| `License` | 오픈소스 라이선스 |
+| 🤖 | LLM/AI 키 노출 탐지와 직접 관련 (이 목록의 초점) |
+| · | 부분적으로 관련 (AI 키를 포함한 여러 카테고리를 다룸) |
+| 🔒Archived | 저장소가 보관 처리됨 |
 
-> Entries marked 🤖 belong to the "LLM API key leak detection" track — a blank area on GitHub that **no authoritative awesome list currently covers**.
+> 🤖 표시가 붙은 항목은 "LLM API 키 노출 탐지" 트랙에 속합니다 — GitHub에서 **어떤 권위 있는 awesome 목록도 현재 다루지 않는** 공백 영역입니다.
 
 ---
 
 <a id="matrix"></a>
-## 🗺️ Overview: Core Tool Capability Matrix
+## 🗺️ 개요: 핵심 도구 역량 매트릭스
 
-> Compare core tools across capability dimensions to quickly locate "what's missing" / "what to borrow".
+> 핵심 도구들을 역량 차원에서 비교해 "무엇이 빠져 있는지" / "무엇을 차용할지"를 빠르게 파악합니다.
 
-| Tool | ⭐ | Detection | Liveness | Multi-source (web/local) | LLM-key | Language |
+| 도구 | ⭐ | 탐지 | 활성 | 다중 소스 (웹/로컬) | LLM 키 | 언어 |
 |------|----|------|------|----------------|---------|------|
 | [gitleaks](https://github.com/gitleaks/gitleaks) | 27.8k | ✅ | — | web+local | — | Go |
 | [trufflehog](https://github.com/trufflesecurity/trufflehog) | 26.8k | ✅ | ✅ | local | ✅ | Go |
@@ -80,11 +80,11 @@
 ---
 
 <a id="giants"></a>
-## 🏆 Giants: Industrial-Grade Secret Scanners
+## 🏆 거인들: 산업급 시크릿 스캐너
 
-The de facto standard for generic secret/credential scanning, with the most mature ecosystem and most complete rules. The first reference for any secret-scanning project.
+범용 시크릿/자격증명 스캐닝의 사실상 표준으로, 가장 성숙한 생태계와 가장 완전한 규칙을 갖추고 있습니다. 모든 시크릿 스캐닝 프로젝트의 첫 번째 참고 자료입니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [trivy](https://github.com/aquasecurity/trivy) | 36.5k | Go | Comprehensive security scanner (vulns/misconfig/secrets/SBOM) for containers, K8s, filesystems, and git repos. | Apache-2.0 |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | 27.8k | Go | Git/file/stdin secret scanner with 222 regex+entropy rules, git-history scanning, and CI/CD pre-commit integration; declared feature-complete. | MIT |
@@ -103,11 +103,11 @@ The de facto standard for generic secret/credential scanning, with the most matu
 ---
 
 <a id="hp-scanner"></a>
-## 🚀 High-Performance / Emerging Scanners
+## 🚀 고성능 / 신흥 스캐너
 
-Rust/Go high-performance engines, research-oriented or innovative-detection scanners — often bring borrowable engineering techniques.
+Rust/Go 고성능 엔진, 연구 지향적이거나 혁신적 탐지 기법을 가진 스캐너 — 차용 가능한 엔지니어링 기법을 자주 제공합니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [noseyparker](https://github.com/praetorian-inc/noseyparker) 🔒Archived | 2.3k | Rust | CLI secret scanner using regex rules over files, Git history, and GitHub orgs with blob-level dedup at GB/s speed. | Apache-2.0 |
 | [betterleaks](https://github.com/betterleaks/betterleaks) · | 1.3k | Go | Gitleaks successor: configurable secrets scanner with CEL-based filtering/validation, BPE token-rarity FP suppression, and multi-source support (GitHub/GitLab/HF/S3). | MIT |
@@ -132,11 +132,11 @@ Rust/Go high-performance engines, research-oriented or innovative-detection scan
 ---
 
 <a id="github-recon"></a>
-## 🔎 GitHub Recon & Public Repo Hunting
+## 🔎 GitHub 정찰 및 공개 저장소 사냥
 
-Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, and code search. Corresponds to Key Scanner's `recent-public` / `github-events` modes.
+GitHub/Gitee/Bitbucket 공개 저장소, 이벤트 스트림, 코드 검색에서 노출된 키를 대량으로 사냥합니다. Key Scanner의 `recent-public` / `github-events` 모드에 대응합니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [gitrob](https://github.com/michenriksen/gitrob) 🔒Archived | 6.2k | Go | Clone org repos and walk git history, flagging sensitive files by filename/extension/path patterns only — no content scanning. | MIT |
 | [shhgit](https://github.com/eth0izzle/shhgit) | 4.0k | JavaScript | Scans GitHub/GitLab/BitBucket repos for 150+ secret signatures with entropy fallback (abandoned) | MIT |
@@ -160,11 +160,11 @@ Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, a
 ---
 
 <a id="llm-key"></a>
-## 🤖 LLM / AI Key Specialists ⭐
+## 🤖 LLM / AI 키 전문 ⭐
 
-**The core track of this list**: discovery and leak detection specifically targeting AI provider keys — OpenAI / Anthropic / Gemini / Groq / DeepSeek / domestic OpenAI-compatible relays, etc. This is a blank area on GitHub that **no authoritative awesome list covers**, and Key Scanner's main battleground.
+**이 목록의 핵심 트랙**: AI 제공자 키에 특화된 탐색 및 노출 탐지 — OpenAI / Anthropic / Gemini / Groq / DeepSeek / 국내 OpenAI 호환 릴레이 등. 이는 GitHub에서 **어떤 권위 있는 awesome 목록도 다루지 않는** 공백 영역이자 Key Scanner의 주된 전장입니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [llm-api-key-checker](https://github.com/ssfun/llm-api-key-checker) 🤖 | 147 | JavaScript | Batch LLM API key validator: paste keys, check liveness/balance across 9 providers via CF Workers+WebSocket. | MIT |
 | [keyhunter](https://github.com/fadidevv/keyhunter) 🤖 | 36 | Rust | Fast Rust scanner that searches GitHub for leaked API keys (OpenAI/Anthropic/Claude/GPT/HF + 45 providers) and verifies which are still active. | — |
@@ -180,11 +180,11 @@ Bulk-hunt leaked keys from GitHub/Gitee/Bitbucket public repos, event streams, a
 ---
 
 <a id="key-validator"></a>
-## ✅ Key Liveness / Validity Checking
+## ✅ 키 활성 / 유효성 검사
 
-Determine whether a leaked key is still valid, and its quota/permissions — directly corresponds to Key Scanner's "liveness check" capability. Most worth borrowing.
+노출된 키가 여전히 유효한지, 그리고 그 할당량/권한이 무엇인지 판정합니다 — Key Scanner의 "활성 검사" 역량에 직접 대응합니다. 차용 가치가 가장 큽니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [keyhacks](https://github.com/streaak/keyhacks) | 6.3k | — | Curated cheatsheet of curl commands to validate whether leaked API keys from ~80 SaaS providers are still alive. | — |
 | [driftwood](https://github.com/trufflesecurity/driftwood) 🔒Archived | 435 | Go | Checks if a cryptographic private key (RSA/EC/DSA PEM) is actively used as a GitHub SSH key or TLS certificate. | Apache-2.0 |
@@ -211,11 +211,11 @@ Determine whether a leaked key is still valid, and its quota/permissions — dir
 ---
 
 <a id="pattern-db"></a>
-## 🧬 Regex / Rule Databases
+## 🧬 정규식 / 규칙 데이터베이스
 
-Regex patterns and rule databases absorbable into your own detectors.
+자체 탐지기에 흡수할 수 있는 정규식 패턴과 규칙 데이터베이스입니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [gf-secrets](https://github.com/dwisiswant0/gf-secrets) | 245 | Shell | Static collection of 23 grep regex JSON patterns (AWS/GCP/Slack/Stripe/etc.) for the gf CLI wrapper; no scanner engine, no verification, no LLM key coverage. | MIT |
 | [truffleHogRegexes](https://github.com/dxa4481/truffleHogRegexes) | 227 | Python | Flat JSON file of ~35 regex patterns for common service tokens (AWS, Slack, Stripe, Google); no scanner logic, no README, unmaintained since 2022. | GPL-3.0 |
@@ -224,11 +224,11 @@ Regex patterns and rule databases absorbable into your own detectors.
 ---
 
 <a id="js-web"></a>
-## 🕸️ JS / Web / Browser Key Extraction
+## 🕸️ JS / 웹 / 브라우저 키 추출
 
-Extract leaked keys/tokens from JavaScript bundles, web pages, HAR, and browser/Burp traffic.
+JavaScript 번들, 웹 페이지, HAR, 브라우저/Burp 트래픽에서 노출된 키/토큰을 추출합니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [SecretFinder](https://github.com/m4ll0k/SecretFinder) | 2.5k | Python | Scans JavaScript files for hardcoded secrets (API keys, tokens, JWT) using regex patterns, supports URL/file/folder input. | GPL-3.0 |
 | [mantra](https://github.com/brosck/mantra) | 911 | Go | Go CLI that regex-scans JS files and HTML pages (fed via stdin URLs) for hardcoded API keys from 100+ third-party services. | GPL-3.0 |
@@ -246,11 +246,11 @@ Extract leaked keys/tokens from JavaScript bundles, web pages, HAR, and browser/
 ---
 
 <a id="container-runtime"></a>
-## 🐳 Container / Runtime / Memory / Gateway Redaction
+## 🐳 컨테이너 / 런타임 / 메모리 / 게이트웨이 마스킹
 
-Scan container images and process memory, or redact in real time at the gateway/log layer — the runtime-protection side.
+컨테이너 이미지와 프로세스 메모리를 스캔하거나, 게이트웨이/로그 계층에서 실시간으로 마스킹합니다 — 런타임 보호 측면입니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [privacy-filter](https://github.com/packyme/privacy-filter) · | 251 | Go | Go library/HTTP/gRPC gateway that redacts PII and secrets from text before it reaches an LLM, using gitleaks rules + entropy + context heuristics. | MIT |
 | [pii-shield](https://github.com/pii-shield/pii-shield) | 146 | Go | K8s sidecar that sanitizes PII/secrets from application logs via entropy analysis + context keywords before logs leave the pod. | Apache-2.0 |
@@ -261,11 +261,11 @@ Scan container images and process memory, or redact in real time at the gateway/
 ---
 
 <a id="honeypot"></a>
-## 🍯 Honeypot / Canary Tokens
+## 🍯 허니팟 / 카나리 토큰
 
-Deploy fake keys/decoys and track leakage and exploitation trails (defensive side, complementary to detection). Includes AI/LLM honeypots.
+가짜 키/미끼를 배치하고 노출과 악용 흔적을 추적합니다 (탐지와 상호 보완되는 방어 측면). AI/LLM 허니팟도 포함합니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [canarytokens](https://github.com/thinkst/canarytokens) | 2.1k | Python | Honeypot platform that generates decoy tokens (AWS keys, kubeconfigs, docs, URLs) and alerts when they are accessed or used. | GPL-3.0 |
 | [canarytokens-docker](https://github.com/thinkst/canarytokens-docker) | 657 | Dockerfile | One-command Docker deployment of a Canarytokens honeypot server, deploying DNS/HTTP/PDF/AWS decoy tokens and capturing trigger alerts. | BSD-3-Clause |
@@ -289,11 +289,11 @@ Deploy fake keys/decoys and track leakage and exploitation trails (defensive sid
 ---
 
 <a id="ai-agent-hook"></a>
-## 🪝 AI Agent Secret-Interception Hooks
+## 🪝 AI 에이전트 시크릿 가로채기 훅
 
-Secret-scanning hooks, skills, and MCP tools added to AI coding agents like Claude Code / Cursor / Codex (an emerging trend).
+Claude Code / Cursor / Codex 같은 AI 코딩 에이전트에 추가되는 시크릿 스캐닝 훅, 스킬, MCP 도구입니다 (신흥 트렌드).
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [ship-safe](https://github.com/asamassekou10/ship-safe) · | 733 | JavaScript | CLI with 23 parallel agents scanning for secrets, LLM/CI/CD/supply-chain vulns; includes auto-fix REPL and SARIF CI output. | MIT |
 | [Claudoscope](https://github.com/cordwainersmith/Claudoscope) · | 197 | Swift | macOS menu-bar dashboard for Claude Code sessions with built-in secret scanning of local JSONL session files and 1-click security hardening. | MIT |
@@ -313,11 +313,11 @@ Secret-scanning hooks, skills, and MCP tools added to AI coding agents like Clau
 ---
 
 <a id="saas"></a>
-## 🏢 SaaS / Multi-Platform Monitoring
+## 🏢 SaaS / 다중 플랫폼 모니터링
 
-Monitor keys exposed across collaboration platforms like Slack / Jira / Confluence / Gitee.
+Slack / Jira / Confluence / Gitee 같은 협업 플랫폼 전반에 노출된 키를 모니터링합니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [badsecrets](https://github.com/blacklanternsecurity/badsecrets) | 804 | Python | Detects known/default cryptographic keys in web framework artifacts (cookies, JWTs, viewstates) via offline verification and active probing. | AGPL-3.0 |
 | [slack-watchman](https://github.com/PaperMtn/slack-watchman) | 402 | Python | Scans Slack workspace messages/files via Slack API for leaked API keys, tokens, PII, and sensitive files using YAML signatures. | GPL-3.0 |
@@ -327,11 +327,11 @@ Monitor keys exposed across collaboration platforms like Slack / Jira / Confluen
 ---
 
 <a id="reference"></a>
-## 📚 Reference Resources & Wordlists
+## 📚 참고 자료 및 워드리스트
 
-Key-validation methodology, leak cases, payload wordlists, and existing awesome lists — not tools but highly worth borrowing.
+키 검증 방법론, 노출 사례, 페이로드 워드리스트, 기존 awesome 목록입니다 — 도구는 아니지만 차용 가치가 매우 높습니다.
 
-| Tool | ⭐ | Language | Description | License |
+| 도구 | ⭐ | 언어 | 설명 | 라이선스 |
 |------|----|----|------|------|
 | [SecLists](https://github.com/danielmiessler/SecLists) | 71.7k | PHP | Curated collection of wordlists, payloads, and patterns for penetration testing and security assessments. | MIT |
 | [nuclei](https://github.com/projectdiscovery/nuclei) | 29.3k | Go | General-purpose DAST vulnerability scanner using YAML templates; not a secret/key detection tool. | MIT |
@@ -343,11 +343,11 @@ Key-validation methodology, leak cases, payload wordlists, and existing awesome 
 ---
 
 <a id="experimental"></a>
-## 🧪 Experimental / Small Tools
+## 🧪 실험적 / 소규모 도구
 
-Low star count or experimental in nature, but represents a niche direction or contains borrowable small tricks.
+스타 수가 적거나 실험적 성격이지만, 틈새 방향을 대표하거나 차용 가능한 작은 기법을 담고 있습니다.
 
-| Tool | ⭐ | Description |
+| 도구 | ⭐ | 설명 |
 |------|----|------|
 | [llm-wiki_obsidian_hermes_r0b0tlabbra1n](https://github.com/r0b0tlab/llm-wiki_obsidian_hermes_r0b0tlabbra1n) | 21 | Agent memory system (Obsidian vault + SQLite FTS5) with a basic regex secret scanner as write-guard, not a dedicated key finder. |
 | [ApiKeyValidator](https://github.com/Syed-Ali-Dev/ApiKeyValidator) | 0 | Web UI to paste OpenAI/Anthropic keys for liveness checking (billing/rate-limit/model list); a pure validation tool, no scanning or leak detection |
@@ -355,45 +355,45 @@ Low star count or experimental in nature, but represents a niche direction or co
 ---
 
 <a id="absorb"></a>
-## 🧩 Technical Borrowing Cheatsheet (Absorbable Ideas)
+## 🧩 기술 차용 치트시트 (흡수 가능한 아이디어)
 
-> The **core value-add** of this list: aggregating each tool's unique techniques into an "absorbable ideas" table, directly mapped to Key Scanner's improvement directions. This is the hands-on checklist for "standing on the shoulders of giants".
+> 이 목록의 **핵심 부가 가치**: 각 도구의 고유한 기법을 "흡수 가능한 아이디어" 표로 집약해 Key Scanner의 개선 방향에 직접 매핑합니다. "거인의 어깨 위에 서기"를 위한 실전 체크리스트입니다.
 
-| Technique | Representative tool | Idea absorbable into Key Scanner |
+| 기법 | 대표 도구 | Key Scanner에 흡수 가능한 아이디어 |
 |------|---------|--------------------------|
-| **Keyword pre-filter gate** | truffleHog / gitleaks / kingfisher | Each detector declares an anchor string (e.g., OpenAI's base64 `T3BlbkFJ`), runs an ultra-fast string match before regex, skipping irrelevant content — scanning throughput can rise several-fold. |
-| **Verify-then-analyze** | truffleHog | Liveness check returns more than valid/invalid: a YAML-defined per-provider permission model enumerates the key's exact scope/quota/visible resources. |
-| **Blast-radius mapping** | mongodb/kingfisher | Leaked key → cloud identity → actually exposed resources (43 providers), upgrading "there's a leak" to "what was leaked," directly driving remediation priority. |
-| **Checksum validation without API calls** | mongodb/kingfisher | For GitHub/Confluent etc. tokens, use a built-in checksum algorithm to judge validity with no network request (zero quota consumption, zero audit trail). |
-| **Baseline snapshot + incremental diff** | Yelp/detect-secrets | Snapshot existing secrets into a baseline JSON, then alert only on "new" ones in CI — historical false positives cleared in one pass. |
-| **ML gibberish classifier** | Yelp/detect-secrets | Use a trained classifier (rfc.model) to filter high-entropy-string false positives, more accurate than pure entropy thresholds. |
-| **Regex→LLM two-stage adjudication** | juanfont/atalaia | Detector preserves recall, then a single schema-constrained LLM call adjudicates precision; confirmed/known test keys short-circuit past the LLM to save tokens. |
-| **Dual-threshold entropy + context proximity gate** | packyme/privacy-filter | When context keywords like `password`/`api_key` are present, use a low entropy threshold (4.0), otherwise high (4.8) — a quantified context heuristic. |
-| **FP-rejection pipeline** | packyme/privacy-filter | Template variables / UUIDs / hex hashes / path-URL boundaries / placeholder words / JSON-comma noise — reject high-entropy false positives rule by rule. |
-| **6-state key status classification** | ssfun/llm-api-key-checker | Beyond valid/invalid: subdivide into low-balance / zero / quota-exhausted / rate-limited / normal — liveness results become more operable. |
-| **Per-key capability matrix** | datumbrain/keyprobe | Beyond liveness, report which models the key can use and whether it supports streaming/batch/files — directly maps to keyscanner's provider mapping. |
-| **BaaS exploitability active probing** | Amal-David/keyleak-detector | After detecting a Supabase/Firebase anon key, actively probe whether RLS is enforced, upgrading "found a key" into a "proven exploitable" attack chain. |
-| **AIza key classification (Maps vs Gemini)** | Amal-David/keyleak-detector | Same AIza prefix: distinguish the expected-exposed Maps key from the truly leaked Gemini key — reduces false positives. |
-| **AI coding-assistant hook protocol** | GitGuardian/ggshield / mintmcp/agent-security | Intercept stdin JSON events (pretooluse/userpromptsubmit), return block/allow; fail-open design: on crash/auth failure, allow + alert, never lock the user out. |
-| **Canary token as LLM key** | thinkst/canarytokens | Plant fake LLM API keys in test configs/repos as honey-tokens, alert on query — proactively detect the leak path. |
-| **Rotation-tutorial direct link** | trufflesecurity/how-to-rotate | Next to a scan finding, link directly to that provider's key-rotation steps, so the user can remediate upon receiving the finding. |
-| **Declared per-provider verification spec** | SpectralOps/keyscope | Declare each provider's verification method in YAML (incl. flip-mode: assert the key is already revoked, for rotation audits); adding a provider is config-only. |
-| **Mask-result in-place redaction output** | secretlint | Mask hit values in-place within source files, paired with SARIF upload to GitHub Code Scanning. |
-| **Org-level fan-out + filename signature DB** | michenriksen/gitrob | Enumerate all org members then scan each one's repos in parallel; ~90 filename/extension signatures (.pem/.kdbx/.sqlite…) for high-value file locating. |
-| **Deep extraction (zip/office/sqlite/pyc)** | mongodb/kingfisher | Extract keys from archives, Office docs, SQLite, Python .pyc — covers artifacts GitHub API scanning can't reach. |
-| **Git-blob SHA-1 dedup** | praetorian-inc/noseyparker | SHA-1 dedup at the blob level for identical content, folding identical keys across inputs/repos into a single finding (10-1000x compression), drastically reducing triage noise in large-scale org scans. |
-| **Local LLM distinguishing test fake keys vs real credentials** | JamesTheGiblet/Whisper | Use a local Ollama to contextually classify regex/entropy-detected candidates, distinguishing test placeholder keys from real credentials — offline, zero quota, fewer false positives. |
-| **JS AST locating variable-name → assignment** | DonIsaac/keyhunter | Parse JS into AST via oxc, locate by variable name (e.g., OPENAI_API_KEY) then take the assignment, distinguishing variable-name context from bare values; with CDN/library auto-skip — fewer false positives in web JS scanning. |
-| **ML post-filter + public benchmark (CredData)** | Samsung/CredSweeper | A TF→ONNX lightweight classifier post-filters regex hits; ships with the CredData public benchmark dataset for reproducible recall/precision evaluation. |
+| **키워드 사전 필터 게이트 (Keyword pre-filter gate)** | truffleHog / gitleaks / kingfisher | 각 탐지기는 앵커 문자열(예: OpenAI의 base64 `T3BlbkFJ`)을 선언하고, 정규식 실행 전 초고속 문자열 매칭을 먼저 돌려 무관한 콘텐츠를 건너뜁니다 — 스캐닝 처리량을 몇 배로 끌어올릴 수 있습니다. |
+| **검증 후 분석 (Verify-then-analyze)** | truffleHog | 활성 검사가 유효/무효 이상을 반환합니다: YAML로 정의된 제공자별 권한 모델이 키의 정확한 범위/할당량/보이는 리소스를 나열합니다. |
+| **피해 반경 매핑 (Blast-radius mapping)** | mongodb/kingfisher | 노출된 키 → 클라우드 식별자 → 실제 노출된 리소스(43개 제공자)로 연결해, "노출이 있다"를 "무엇이 노출됐는지"로 끌어올려 조치 우선순위를 직접 결정합니다. |
+| **API 호출 없는 체크섬 검증 (Checksum validation without API calls)** | mongodb/kingfisher | GitHub/Confluent 등 토큰의 경우 내장 체크섬 알고리즘으로 네트워크 요청 없이 유효성을 판정합니다 (할당량 소비 영, 감사 추적 영). |
+| **베이스라인 스냅샷 + 증분 디프 (Baseline snapshot + incremental diff)** | Yelp/detect-secrets | 기존 시크릿을 베이스라인 JSON으로 스냅샷 떠놓고, CI에서는 "새로운" 것만 경고합니다 — 과거 오탐을 한 번에 청소합니다. |
+| **ML 의미불명 분류기 (ML gibberish classifier)** | Yelp/detect-secrets | 학습된 분류기(rfc.model)로 고엔트로피 문자열 오탐을 걸러내어, 순수 엔트로피 임계값보다 더 정확합니다. |
+| **정규식 → LLM 2단계 판정 (Regex→LLM two-stage adjudication)** | juanfont/atalaia | 탐지기는 재현율을 유지하고, 단일 스키마 제약 LLM 호출이 정밀도를 판정합니다; 확인/알려진 테스트 키는 토큰 절약을 위해 LLM 앞에서 단락 회로로 건너뜁니다. |
+| **이중 임계값 엔트로피 + 문맥 근접 게이트 (Dual-threshold entropy + context proximity gate)** | packyme/privacy-filter | `password`/`api_key` 같은 문맥 키워드가 있으면 낮은 엔트로피 임계값(4.0)을, 없으면 높은 값(4.8)을 씁니다 — 정량화된 문맥 휴리스틱입니다. |
+| **오탭 거리 파이프라인 (FP-rejection pipeline)** | packyme/privacy-filter | 템플릿 변수 / UUID / hex 해시 / 경로-URL 경계 / 자리표시자 단어 / JSON 콤마 노이즈 — 고엔트로피 오탐을 규칙별로 하나씩 거부합니다. |
+| **6상태 키 상태 분류 (6-state key status classification)** | ssfun/llm-api-key-checker | 유효/무효를 넘어 저잔액 / 영 / 할당량 소진 / 속도제한 / 정상으로 세분화 — 활성 결과를 더 조치 가능하게 만듭니다. |
+| **키별 역량 매트릭스 (Per-key capability matrix)** | datumbrain/keyprobe | 활성 여부를 넘어 해당 키가 어떤 모델을 쓸 수 있는지, 스트리밍/배치/파일을 지원하는지 보고합니다 — keyscanner의 제공자 매핑에 직접 대응합니다. |
+| **BaaS 악용가능성 능동 탐침 (BaaS exploitability active probing)** | Amal-David/keyleak-detector | Supabase/Firebase anon 키 탐지 후 RLS가 적용되는지 능동 탐침해 "키를 찾았다"를 "악용 가능함을 입증한" 공격 체인으로 끌어올립니다. |
+| **AIza 키 분류 (Maps vs Gemini) (AIza key classification (Maps vs Gemini))** | Amal-David/keyleak-detector | 같은 AIza 접두어: 노출이 예상되는 Maps 키와 실제 노출된 Gemini 키를 구분합니다 — 오탭을 줄입니다. |
+| **AI 코딩 보조 훅 프로토콜 (AI coding-assistant hook protocol)** | GitGuardian/ggshield / mintmcp/agent-security | stdin JSON 이벤트(pretooluse/userpromptsubmit)를 가로채 차단/허용을 반환합니다; 오픈 페일 설계: 크래시/인증 실패 시 허용+경고, 사용자를 절대 잠그지 않습니다. |
+| **카나리 토큰을 LLM 키로 (Canary token as LLM key)** | thinkst/canarytokens | 테스트 설정/저장소에 가짜 LLM API 키를 허니토큰으로 심어두고, 조회 시 경고합니다 — 노출 경로를 사전 탐지합니다. |
+| **회전 튜토리얼 직접 링크 (Rotation-tutorial direct link)** | trufflesecurity/how-to-rotate | 스캔 결과 옆에 해당 제공자의 키 회전 단계로 직접 링크해, 사용자가 결과를 받자마자 조치할 수 있게 합니다. |
+| **제공자별 검증 스펙 선언 (Declared per-provider verification spec)** | SpectralOps/keyscope | 각 제공자의 검증 방법을 YAML로 선언합니다(플립 모드 포함: 회전 감사를 위해 키가 이미 폐기됐음을 단언); 제공자 추가는 설정만으로 끝납니다. |
+| **마스크 결과 내부 마스킹 출력 (Mask-result in-place redaction output)** | secretlint | 소스 파일 내부에서 적중 값을 내부 마스킹하고, SARIF 업로드로 GitHub Code Scanning과 짝짓습니다. |
+| **조직 단위 확장 + 파일명 서명 DB (Org-level fan-out + filename signature DB)** | michenriksen/gitrob | 조직원 전체를 나열한 뒤 각자의 저장소를 병렬로 스캔합니다; 고품위 파일 위치 파악용 ~90개 파일명/확장자 서명(.pem/.kdbx/.sqlite…)을 갖춥니다. |
+| **심층 추출 (zip/office/sqlite/pyc) (Deep extraction (zip/office/sqlite/pyc))** | mongodb/kingfisher | 아카이브, Office 문서, SQLite, Python .pyc에서 키를 추출합니다 — GitHub API 스캐닝이 닿지 못하는 산출물을 덮습니다. |
+| **Git-blob SHA-1 중복 제거 (Git-blob SHA-1 dedup)** | praetorian-inc/noseyparker | 동일 콘텐츠를 blob 수준에서 SHA-1 중복 제거해, 입력/저장소 간 동일 키를 단일 결과로 접습니다(10-1000배 압축), 대규모 조직 스캔에서 분류 노이즈를 대폭 줄입니다. |
+| **로컬 LLM으로 테스트 가짜 키와 실제 자격증명 구분 (Local LLM distinguishing test fake keys vs real credentials)** | JamesTheGiblet/Whisper | 로컬 Ollama로 정규식/엔트로피 탐지 후보를 문맥적으로 분류해, 테스트 자리표시자 키와 실제 자격증명을 구분합니다 — 오프라인, 할당량 영, 오탭 감소. |
+| **JS AST 변수명 → 할당 위치 파악 (JS AST locating variable-name → assignment)** | DonIsaac/keyhunter | oxc로 JS를 AST로 파싱해 변수명(예: OPENAI_API_KEY)으로 위치를 찾은 뒤 할당을 취해, 노골한 값과 변수명 문맥을 구분합니다; CDN/라이브러리 자동 건너뛰기 포함 — 웹 JS 스캐닝에서 오탭 감소. |
+| **ML 사후 필터 + 공개 벤치마크 (CredData) (ML post-filter + public benchmark (CredData))** | Samsung/CredSweeper | TF→ONNX 경량 분류기가 정규식 적중을 사후 필터링합니다; 재현 가능한 재현율/정밀도 평가용 CredData 공개 벤치마크 데이터셋을 함께 제공합니다. |
 
 ---
 
 <a id="contributing"></a>
-## 🙋 Contributing
+## 🙋 기여하기
 
-Contributions welcome! When opening a PR, please provide: tool name (with jump link), star count, primary language, a one-sentence description, license, and note its relevance to "API key / LLM key leak detection." If it has a unique technique, add it to the [Technical Borrowing Cheatsheet](#absorb).
+기여를 환영합니다! PR을 열 때 제공해 주세요: 도구 이름(점프 링크 포함), 스타 수, 주 언어, 한 줄 설명, 라이선스, 그리고 "API 키 / LLM 키 노출 탐지"와의 관련성 표시. 고유한 기법이 있다면 [기술 차용 치트시트](#absorb)에 추가해 주세요.
 
 <a id="license"></a>
-## 📜 License
+## 📜 라이선스
 
-List content is dedicated to the public domain under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Each tool retains its own license.
+목록 콘텐츠는 [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)에 따라 퍼블릭 도메인에 귀속됩니다. 각 도구는 자체 라이선스를 유지합니다.

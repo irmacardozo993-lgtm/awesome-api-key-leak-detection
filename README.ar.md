@@ -6,6 +6,12 @@
 >
 > كل أداة موسومة بتقنياتها الفريدة و"أفكارها القابلة للاستيعاب"، بحيث يمكنك الحكم على ما يستحق الاقتراض إلى ماسحك الخاص.
 
+<a id="acknowledgments"></a>
+## 🙏 شكر وتقدير
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — مجتمع OpenClaw الصيني على تيليجرام — شكرًا على الدعم والنقاش.
+- **[Linux.do](https://linux.do)** — مجتمع للمطورين والتقنية باللغة الصينية (Discourse) — شكرًا على الملاحظات والانتشار.
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg) ![Tools](https://img.shields.io/badge/tools-130+-blue) ![Focus: LLM Keys](https://img.shields.io/badge/focus-LLM%20keys-purple) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ---
@@ -392,12 +398,6 @@
 ## 🙋 المساهمة
 
 المساهمات مرحَّب بها! عند فتح PR، يُرجى توفير: اسم الأداة (مع رابط قفزة)، عدد النجوم، اللغة الأساسية، وصف بجملة واحدة، الترخيص، والإشارة إلى صلته بـ "كشف تسرّب مفاتيح API / مفاتيح LLM". إذا كان لها تقنية فريدة، أضفها إلى [ورقة غش الاقتراض التقني](#absorb).
-
-<a id="acknowledgments"></a>
-## 🙏 شكر وتقدير
-
-- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — مجتمع OpenClaw الصيني على تيليجرام — شكرًا على الدعم والنقاش.
-- **[Linux.do](https://linux.do)** — مجتمع للمطورين والتقنية باللغة الصينية (Discourse) — شكرًا على الملاحظات والانتشار.
 
 <a id="license"></a>
 ## 📜 الترخيص

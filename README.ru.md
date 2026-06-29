@@ -6,6 +6,12 @@
 >
 > Каждый инструмент снабжён аннотацией об его уникальных приёмах и «заимствуемых идеях», чтобы вы могли судить, какие из них стоит перенести в собственный сканер.
 
+<a id="acknowledgments"></a>
+## 🙏 Благодарности
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — китайскоязычное сообщество OpenClaw в Telegram — спасибо за поддержку и обсуждение.
+- **[Linux.do](https://linux.do)** — китайскоязычное сообщество разработчиков и технологий (Discourse) — спасибо за обратную связь и охват.
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg) ![Tools](https://img.shields.io/badge/tools-130+-blue) ![Focus: LLM Keys](https://img.shields.io/badge/focus-LLM%20keys-purple) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ---
@@ -392,12 +398,6 @@
 ## 🙋 Участие в проекте
 
 Приветствуются вклады! Открывая PR, укажите: название инструмента (со ссылкой-переходом), число звёзд, основной язык, описание в одно предложение, лицензию и отметьте его отношение к «выявлению утечек API key / LLM-ключей». Если у него есть уникальный приём, добавьте его в [шпаргалку по техническим заимствованиям](#absorb).
-
-<a id="acknowledgments"></a>
-## 🙏 Благодарности
-
-- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — китайскоязычное сообщество OpenClaw в Telegram — спасибо за поддержку и обсуждение.
-- **[Linux.do](https://linux.do)** — китайскоязычное сообщество разработчиков и технологий (Discourse) — спасибо за обратную связь и охват.
 
 <a id="license"></a>
 ## 📜 Лицензия

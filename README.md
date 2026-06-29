@@ -6,6 +6,12 @@
 >
 > Each tool is annotated with its unique techniques and "absorbable ideas," so you can judge which are worth borrowing into your own scanner.
 
+<a id="acknowledgments"></a>
+## 🙏 Acknowledgments
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — the Chinese-language OpenClaw community on Telegram — thanks for support and discussion.
+- **[Linux.do](https://linux.do)** — a Chinese-language developer & tech community (Discourse) — thanks for feedback and reach.
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg) ![Tools](https://img.shields.io/badge/tools-130+-blue) ![Focus: LLM Keys](https://img.shields.io/badge/focus-LLM%20keys-purple) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ---
@@ -392,12 +398,6 @@ Low star count or experimental in nature, but represents a niche direction or co
 ## 🙋 Contributing
 
 Contributions welcome! When opening a PR, please provide: tool name (with jump link), star count, primary language, a one-sentence description, license, and note its relevance to "API key / LLM key leak detection." If it has a unique technique, add it to the [Technical Borrowing Cheatsheet](#absorb).
-
-<a id="acknowledgments"></a>
-## 🙏 Acknowledgments
-
-- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — the Chinese-language OpenClaw community on Telegram — thanks for support and discussion.
-- **[Linux.do](https://linux.do)** — a Chinese-language developer & tech community (Discourse) — thanks for feedback and reach.
 
 <a id="license"></a>
 ## 📜 License

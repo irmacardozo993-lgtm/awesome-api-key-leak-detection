@@ -26,7 +26,7 @@
 - [12. 📚 Recursos de referência e wordlists](#reference)
 - [13. 🧪 Ferramentas experimentais / pequenas](#experimental)
 - [14. 🧩 Folha de dicas de empréstimo técnico (Ideias absorvíveis)](#absorb)
-- [🙋 Contribuindo](#contributing) · [📜 Licença](#license)
+- [🙋 Contribuindo](#contributing) · [🙏 Agradecimentos](#acknowledgments) · [📜 Licença](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Contagem baixa de estrelas ou de natureza experimental, mas representa uma dire�
 ## 🙋 Contribuindo
 
 Contribuições são bem-vindas! Ao abrir um PR, forneça: nome da ferramenta (com link de salto), contagem de estrelas, linguagem principal, uma descrição de uma frase, licença e indique sua relevância para "detecção de vazamento de API key / key de LLM". Se ela tiver uma técnica única, adicione-a à [Folha de dicas de empréstimo técnico](#absorb).
+
+<a id="acknowledgments"></a>
+## 🙏 Agradecimentos
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — a comunidade OpenClaw em chinês no Telegram — obrigado pelo apoio e discussão.
+- **[Linux.do](https://linux.do)** — uma comunidade de desenvolvedores e tecnologia em chinês (Discourse) — obrigado pelos feedbacks e alcance.
 
 <a id="license"></a>
 ## 📜 Licença

@@ -26,7 +26,7 @@
 - [12. 📚 Ressources de référence & wordlists](#reference)
 - [13. 🧪 Outils expérimentaux / de petite taille](#experimental)
 - [14. 🧩 Aide-mémoire d'emprunt technique (idées absorbables)](#absorb)
-- [🙋 Contribuer](#contributing) · [📜 Licence](#license)
+- [🙋 Contribuer](#contributing) · [🙏 Remerciements](#acknowledgments) · [📜 Licence](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Faible nombre d'étoiles ou expérimentaux par nature, mais représentatifs d'un
 ## 🙋 Contribuer
 
 Les contributions sont les bienvenues ! En ouvrant une PR, veuillez fournir : le nom de l'outil (avec lien d'accès), le nombre d'étoiles, le langage principal, une description en une phrase, la licence, et indiquer sa pertinence vis-à-vis de la « détection de fuite de clés API / clés LLM ». S'il présente une technique unique, ajoutez-la à l'[Aide-mémoire d'emprunt technique](#absorb).
+
+<a id="acknowledgments"></a>
+## 🙏 Remerciements
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — la communauté OpenClaw en chinois sur Telegram — merci pour le soutien et les discussions.
+- **[Linux.do](https://linux.do)** — une communauté de développeurs et de technologie en chinois (Discourse) — merci pour les retours et la portée.
 
 <a id="license"></a>
 ## 📜 Licence

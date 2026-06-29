@@ -26,7 +26,7 @@
 - [12. 📚 Risorse di riferimento e wordlist](#reference)
 - [13. 🧪 Strumenti sperimentali / piccoli](#experimental)
 - [14. 🧩 Cheatsheet di prestito tecnico (idee assorbibili)](#absorb)
-- [🙋 Contribuire](#contributing) · [📜 Licenza](#license)
+- [🙋 Contribuire](#contributing) · [🙏 Ringraziamenti](#acknowledgments) · [📜 Licenza](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Basso numero di stelle o di natura sperimentale, ma rappresenta una direzione di
 ## 🙋 Contribuire
 
 Contributi benvenuti! Quando apri una PR, fornisci: nome dello strumento (con link di salto), numero di stelle, linguaggio principale, una descrizione di una frase, licenza, e nota la sua pertinenza alla "rilevazione di leak di API key / chiavi LLM". Se ha una tecnica unica, aggiungila al [Cheatsheet di prestito tecnico](#absorb).
+
+<a id="acknowledgments"></a>
+## 🙏 Ringraziamenti
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — la community di OpenClaw in cinese su Telegram — grazie per il supporto e la discussione.
+- **[Linux.do](https://linux.do)** — una community di sviluppatori e tecnologia in cinese (Discourse) — grazie per i feedback e la portata.
 
 <a id="license"></a>
 ## 📜 Licenza

@@ -26,7 +26,7 @@
 - [12. 📚 Recursos de referencia y wordlists](#reference)
 - [13. 🧪 Herramientas experimentales / pequeñas](#experimental)
 - [14. 🧩 Cheatsheet de técnicas absorbibles (ideas prestables)](#absorb)
-- [🙋 Contribuir](#contributing) · [📜 Licencia](#license)
+- [🙋 Contribuir](#contributing) · [🙏 Agradecimientos](#acknowledgments) · [📜 Licencia](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Bajo número de estrellas o de naturaleza experimental, pero representan una dir
 ## 🙋 Contribuir
 
 ¡Se agradecen las contribuciones! Al abrir un PR, proporciona por favor: nombre de la herramienta (con enlace de salto), número de estrellas, lenguaje principal, una descripción de una frase, licencia, y señala su relevancia para la "detección de fugas de API key / LLM key". Si tiene una técnica única, añádela a la [Cheatsheet de técnicas absorbibles](#absorb).
+
+<a id="acknowledgments"></a>
+## 🙏 Agradecimientos
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — la comunidad de OpenClaw en chino en Telegram — gracias por el apoyo y el debate.
+- **[Linux.do](https://linux.do)** — una comunidad de desarrolladores y tecnología en chino (Discourse) — gracias por los comentarios y el alcance.
 
 <a id="license"></a>
 ## 📜 Licencia

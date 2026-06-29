@@ -26,7 +26,7 @@
 - [12. 📚 Reference Resources & Wordlists](#reference)
 - [13. 🧪 Experimental / Small Tools](#experimental)
 - [14. 🧩 Technical Borrowing Cheatsheet (Absorbable Ideas)](#absorb)
-- [🙋 Contributing](#contributing) · [📜 License](#license)
+- [🙋 Contributing](#contributing) · [🙏 Acknowledgments](#acknowledgments) · [📜 License](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Low star count or experimental in nature, but represents a niche direction or co
 ## 🙋 Contributing
 
 Contributions welcome! When opening a PR, please provide: tool name (with jump link), star count, primary language, a one-sentence description, license, and note its relevance to "API key / LLM key leak detection." If it has a unique technique, add it to the [Technical Borrowing Cheatsheet](#absorb).
+
+<a id="acknowledgments"></a>
+## 🙏 Acknowledgments
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — the Chinese-language OpenClaw community on Telegram — thanks for support and discussion.
+- **[Linux.do](https://linux.do)** — a Chinese-language developer & tech community (Discourse) — thanks for feedback and reach.
 
 <a id="license"></a>
 ## 📜 License

@@ -26,7 +26,7 @@
 - [12. 📚 Referenzressourcen & Wortlisten](#reference)
 - [13. 🧪 Experimentell / kleine Tools](#experimental)
 - [14. 🧩 Spickzettel für technisches Ausleihen (absorbierbare Ideen)](#absorb)
-- [🙋 Mitwirken](#contributing) · [📜 Lizenz](#license)
+- [🙋 Mitwirken](#contributing) · [🙏 Danksagung](#acknowledgments) · [📜 Lizenz](#license)
 
 ---
 
@@ -392,6 +392,12 @@ Niedrige Sternzahl oder experimenteller Natur, repräsentieren aber eine Nischen
 ## 🙋 Mitwirken
 
 Beiträge willkommen! Beim Öffnen eines PR bitte angeben: Werkzeugname (mit Sprunglink), Sternzahl, Hauptsprache, ein Ein-Satz-Beschreibung, Lizenz sowie den Bezug zu „API-Schlüssel- / LLM-Schlüssel-Leckerkennung". Wenn es eine einzigartige Technik gibt, fügen Sie sie dem [Spickzettel für technisches Ausleihen](#absorb) hinzu.
+
+<a id="acknowledgments"></a>
+## 🙏 Danksagung
+
+- **[Telegram OpenClaw 中文社区](https://t.me/OpenClaw_Group)** — die chinesischsprachige OpenClaw-Community auf Telegram — Danke für Support und Diskussion.
+- **[Linux.do](https://linux.do)** — eine chinesischsprachige Entwickler- und Tech-Community (Discourse) — Danke für Feedback und Reichweite.
 
 <a id="license"></a>
 ## 📜 Lizenz

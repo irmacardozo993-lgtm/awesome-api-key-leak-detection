@@ -403,3 +403,21 @@
 ## 📜 الترخيص
 
 محتوى القائمة مُكرَّس للملكية العامة بموجب [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). تحتفظ كل أداة بترخيصها الخاص.
+
+
+---
+
+<a id="star-history"></a>
+## ⭐ تاريخ النجوم
+
+<sub>إذا ساعدتك هذه القائمة، يُرجى ترك ⭐ — فهذا يساعد الآخرين على اكتشافها.</sub>
+
+<a href="https://star-history.com/#Lxcardoza993/awesome-api-key-leak-detection&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+  </picture>
+</a>
+
+[⬆ العودة للأعلى](#awesome-api-key-leak-detection)

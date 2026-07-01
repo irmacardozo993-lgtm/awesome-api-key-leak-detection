@@ -403,3 +403,21 @@ Contribuições são bem-vindas! Ao abrir um PR, forneça: nome da ferramenta (c
 ## 📜 Licença
 
 O conteúdo da lista é dedicado ao domínio público sob [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Cada ferramenta retém sua própria licença.
+
+
+---
+
+<a id="star-history"></a>
+## ⭐ Histórico de Stars
+
+<sub>Se esta lista te ajudar, considere deixar um ⭐ — isso ajuda outros a descobri-la.</sub>
+
+<a href="https://star-history.com/#Lxcardoza993/awesome-api-key-leak-detection&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+  </picture>
+</a>
+
+[⬆ Voltar ao topo](#awesome-api-key-leak-detection)

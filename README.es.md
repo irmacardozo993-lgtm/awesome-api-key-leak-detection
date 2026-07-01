@@ -403,3 +403,21 @@ Bajo número de estrellas o de naturaleza experimental, pero representan una dir
 ## 📜 Licencia
 
 El contenido de la lista está dedicado al dominio público bajo [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Cada herramienta conserva su propia licencia.
+
+
+---
+
+<a id="star-history"></a>
+## ⭐ Historial de Stars
+
+<sub>Si esta lista te ayuda, considera dejar un ⭐ — ayuda a otros a descubrirla.</sub>
+
+<a href="https://star-history.com/#Lxcardoza993/awesome-api-key-leak-detection&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+  </picture>
+</a>
+
+[⬆ Volver arriba](#awesome-api-key-leak-detection)

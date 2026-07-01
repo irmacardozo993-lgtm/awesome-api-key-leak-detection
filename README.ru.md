@@ -403,3 +403,21 @@
 ## 📜 Лицензия
 
 Содержимое списка передано в общественное достояние по лицензии [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Каждый инструмент сохраняет собственную лицензию.
+
+
+---
+
+<a id="star-history"></a>
+## ⭐ История звёзд
+
+<sub>Если этот список вам помог, поставьте, пожалуйста, ⭐ — это поможет другим его найти.</sub>
+
+<a href="https://star-history.com/#Lxcardoza993/awesome-api-key-leak-detection&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Lxcardoza993/awesome-api-key-leak-detection&type=Date" />
+  </picture>
+</a>
+
+[⬆ Наверх](#awesome-api-key-leak-detection)
